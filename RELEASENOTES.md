@@ -35,6 +35,7 @@ Wandbox を使わず gcc/clang の Docker image を使って検証していま�
 * [ブログズミ](https://srz-zumix.blogspot.com/2020/07/)
   * [[Travis CI] Segmentation fault したときにスタックトレースを出力する設定](https://srz-zumix.blogspot.com/2019/10/wiptravis-ci-segmentation-fault.html)
   * [[CI][CodeReview] LGTM.com 始めました](https://srz-zumix.blogspot.com/2020/06/cicodereview-lgtmcom.html)
+  * Blogger の公開日設定がいまいち使いこなせてなくておかしくなっていたのを修正しました（公開日ではなく最終更新日になってる？）
 
 ### 仕事
 
