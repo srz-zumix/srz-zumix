@@ -3,6 +3,5 @@
 [![support](https://img.shields.io/badge/%24-support-orange.svg)](https://amzn.asia/6fNxDZU)
 
 
-Blog: https://srz-zumix.blogspot.com/
-
-Twitter: https://twitter.com/srz_zumix
+* Blog: https://srz-zumix.blogspot.com/
+* Twitter: https://twitter.com/srz_zumix
