@@ -5,3 +5,4 @@
 
 * Blog: https://srz-zumix.blogspot.com/
 * Twitter: https://twitter.com/srz_zumix
+* [自分リリースノート](./RELEASENOTES.md)
