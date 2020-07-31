@@ -4,8 +4,11 @@
 
 ### iutest 関連
 
+* [iutest 1.17.1](https://github.com/srz-zumix/iutest/releases/tag/v1.17.1) をリリースしました
 * NE_RANGE/NE_COLLECTIONS アサーションを追加しました
 * [Wandbox](https://wandbox.org/) の API 制限開始に伴い iutest.min.wandbox.hpp の圧縮を強化しました [PR485](https://github.com/srz-zumix/iutest/pull/485)
+* [Wandbox での make ビルド](https://github.com/srz-zumix/iutest/pull/491) に対応しました（v1.17.1 には含みません）
+* GoogleTest の TestCase -> TestSuite 移行への対応を開始しました
 
 
 ### CI 関連
@@ -23,19 +26,32 @@ Wandbox を使わず gcc/clang の Docker image を使って検証していま�
 * [ci-specs](https://github.com/srz-zumix/ci-specs)
   * [ci-trigger](https://github.com/srz-zumix/ci-trigger)
     * ブランチフィルターの調査中
+  * [ci-normalize-envvars](https://github.com/srz-zumix/ci-normalize-envvars)
+    * 各種 CI サービスの環境変数の正規化を行うシェルファイルの開発を始めました
+    * サービス名とコミットハッシュに対応済み
+    * 現在ブランチ・タグに対応中
 
 ### OSS 関連
 
+* [wandbox-api v0.9.6](https://github.com/srz-zumix/wandbox-api/releases/tag/v0.9.6) をリリースしました
+  * [Wandbox API](https://github.com/melpon/wandbox/blob/master/kennel2/API.rst) の CLI ツール [wandbox-api](https://github.com/srz-zumix/wandbox-api) です
+    * api ラッパーの他に、 c++ 用に include ファイルの自動追加や c++ 向けの wandbox オプションに対応した wandbox-cxx コマンドが使用できます
+  * v0.9.6 では python 用のコマンドを追加しました
+    * import に対応し自動で関連ファイルをファイルリストに追加します
+* [zapcc](https://github.com/yrnkrn/zapcc) の docker コンテナを作りました https://github.com/srz-zumix/docker-zapcc
 * 7月以前ですが・・
   * コードメトリクスツール [Lizard](https://github.com/terryyin/lizard) を Docker コンテナ化した[docker-lizard](https://github.com/srz-zumix/docker-lizard) を公開
-  * [Wandbox API](https://github.com/melpon/wandbox/blob/master/kennel2/API.rst) の CLI ツール [wandbox-api](https://github.com/srz-zumix/wandbox-api) を公開
 
-### ブログ
+### ブログ/執筆
 
 * [ブログズミ](https://srz-zumix.blogspot.com/2020/07/)
   * [[Travis CI] Segmentation fault したときにスタックトレースを出力する設定](https://srz-zumix.blogspot.com/2019/10/wiptravis-ci-segmentation-fault.html)
   * [[CI][CodeReview] LGTM.com 始めました](https://srz-zumix.blogspot.com/2020/06/cicodereview-lgtmcom.html)
+  * [[技術書] 画像のフォーマットチェックを GitHub Actions でしてみた](https://srz-zumix.blogspot.com/2020/07/github-actions.html)
+  * [iutest v1.17.1 をリリースしました](https://srz-zumix.blogspot.com/2020/07/iutest-v1171.html)
   * Blogger の公開日設定がいまいち使いこなせてなくておかしくなっていたのを修正しました（公開日ではなく最終更新日になってる？）
+* 執筆
+  * 新しい本の調整をしてました
 
 ### 仕事
 
@@ -48,3 +64,4 @@ Wandbox を使わず gcc/clang の Docker image を使って検証していま�
   * ところで [C++ 不透明エイリアス(opaque alias) ってどうなったんだろ？ - ずみっくす@あつまれCIサービス (@srz_zumix)](https://twitter.com/srz_zumix/status/1283669007871033344)
   * [本の虫: C++1yに提案されている不透明エイリアス(opaque alias)](https://cpplover.blogspot.com/2013/09/c1yopaque-alias.html)
 * システムヘッダーの警告を有効にして遊んでました [https://github.com/srz-zumix/iutest/pull/465](https://github.com/srz-zumix/iutest/pull/465)
+  * システムヘッダーってテストされてて警告はなにもないと思いこんでいましたが、全然そんなことなかった・・
