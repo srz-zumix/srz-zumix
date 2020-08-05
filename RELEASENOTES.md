@@ -8,11 +8,19 @@
 
 ### OSS 関連
 
+* [googletest](https://github.com/google/googletest)
+  * [GTEST_REMOVE_LEGACY_TEST_CASEAPI_ を define したときのビルド・テスト失敗修正 PR](https://github.com/google/googletest/pull/2972) を出しました
+* [wandbox-api](https://github.com/srz-zumix/wandbox-api)
+  * wandbox-python で setup.py を認識できるようにしました。 [PR](https://github.com/srz-zumix/wandbox-api/pull/9)
+
 ### ブログ/執筆
 
-* [ブログズミ](https://srz-zumix.blogspot.com/2020/07/)
+* [ブログズミ](https://srz-zumix.blogspot.com/2020/08/)
+  * [[GitHub Actions] Actions の PR 時に自分自身をアクションとして実行する](https://srz-zumix.blogspot.com/2020/08/github-actions-actions-pr.html)
 
 ### その他
+
+* [CalorieMate to Programmer CUIモード](https://t.co/77LHLWVXel?amp=1) が面白かったです
 
 ## 0.34.4.7 (2020/07)
 
