@@ -4,19 +4,26 @@
 
 ### iutest 関連
 
+* [zapcc](https://github.com/yrnkrn/zapcc) でのテストを GitHub Actions に追加しました [PR](https://github.com/srz-zumix/iutest/pull/493)
+
 ### CI 関連
 
 ### OSS 関連
 
 * [googletest](https://github.com/google/googletest)
-  * [GTEST_REMOVE_LEGACY_TEST_CASEAPI_ を define したときのビルド・テスト失敗修正 PR](https://github.com/google/googletest/pull/2972) を出しました
+  * GTEST_REMOVE_LEGACY_TEST_CASEAPI_ を define したときのビルド・テスト失敗修正 PR
+    * https://github.com/google/googletest/pull/2972)
+    * https://github.com/google/googletest/pull/2979
 * [wandbox-api](https://github.com/srz-zumix/wandbox-api)
-  * wandbox-python で setup.py を認識できるようにしました。 [PR](https://github.com/srz-zumix/wandbox-api/pull/9)
+  * wandbox-python で setup.py を認識できるようにしました [PR](https://github.com/srz-zumix/wandbox-api/pull/9)
+  * wandbox-CPP（Cプリプロセッサ）と wandbox-cc（C言語）を追加しました [PR](https://github.com/srz-zumix/wandbox-api/pull/11)
+  * 一部のオプションが評価されていなかった不具合を修正しました [PR](https://github.com/srz-zumix/wandbox-api/pull/11)
 
 ### ブログ/執筆
 
 * [ブログズミ](https://srz-zumix.blogspot.com/2020/08/)
   * [[GitHub Actions] Actions の PR 時に自分自身をアクションとして実行する](https://srz-zumix.blogspot.com/2020/08/github-actions-actions-pr.html)
+  * [[iutest] ドキュメントの置き場を GitHub Pages に集約した](https://srz-zumix.blogspot.com/2020/08/iutest-github-pages.html)
 
 ### その他
 
