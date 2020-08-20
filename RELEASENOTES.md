@@ -5,6 +5,7 @@
 ### iutest 関連
 
 * [zapcc](https://github.com/yrnkrn/zapcc) でのテストを GitHub Actions に追加しました [PR](https://github.com/srz-zumix/iutest/pull/493)
+* GoogleTest が将来的に TestCase が TestSuite に変わる点に対応しました（iutest は TestCase を廃止せず両方サポートします）
 
 ### CI 関連
 
@@ -18,12 +19,18 @@
   * wandbox-python で setup.py を認識できるようにしました [PR](https://github.com/srz-zumix/wandbox-api/pull/9)
   * wandbox-CPP（Cプリプロセッサ）と wandbox-cc（C言語）を追加しました [PR](https://github.com/srz-zumix/wandbox-api/pull/11)
   * 一部のオプションが評価されていなかった不具合を修正しました [PR](https://github.com/srz-zumix/wandbox-api/pull/11)
+* [JetBrains All Products Pack](https://www.jetbrains.com/ja-jp/community/opensource/#support) の OSS ライセンスを取得しました
 
 ### ブログ/執筆
 
 * [ブログズミ](https://srz-zumix.blogspot.com/2020/08/)
   * [[GitHub Actions] Actions の PR 時に自分自身をアクションとして実行する](https://srz-zumix.blogspot.com/2020/08/github-actions-actions-pr.html)
   * [[iutest] ドキュメントの置き場を GitHub Pages に集約した](https://srz-zumix.blogspot.com/2020/08/iutest-github-pages.html)
+  * [[Doxygen] @page の名前には小文字を使おう](https://srz-zumix.blogspot.com/2020/08/doxygen-page.html)
+
+### 仕事
+
+* 約半年ぶりに出社した 
 
 ### その他
 
