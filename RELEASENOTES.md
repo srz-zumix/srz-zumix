@@ -18,6 +18,9 @@
 * [wandbox-api](https://github.com/srz-zumix/wandbox-api)
   * wandbox-python で setup.py を認識できるようにしました [PR](https://github.com/srz-zumix/wandbox-api/pull/9)
   * wandbox-CPP（Cプリプロセッサ）と wandbox-cc（C言語）を追加しました [PR](https://github.com/srz-zumix/wandbox-api/pull/11)
+  * wandbox-ruby,wandbox-mruby を追加しました [PR](https://github.com/srz-zumix/wandbox-api/pull/12)
+  * wandbox-go を追加しました [PR](https://github.com/srz-zumix/wandbox-api/pull/13)
+  * wandbox-ssl を追加しました [PR](https://github.com/srz-zumix/wandbox-api/pull/14)
   * 一部のオプションが評価されていなかった不具合を修正しました [PR](https://github.com/srz-zumix/wandbox-api/pull/11)
 * [JetBrains All Products Pack](https://www.jetbrains.com/ja-jp/community/opensource/#support) の OSS ライセンスを取得しました
 
