@@ -1,5 +1,58 @@
 # 自分リリースノート (Myself Release Notes)
 
+## 0.34.5.8 (2020/08)
+
+### iutest 関連
+
+* [zapcc](https://github.com/yrnkrn/zapcc) でのテストを GitHub Actions に追加しました [PR](https://github.com/srz-zumix/iutest/pull/493)
+* GoogleTest が将来的に TestCase が TestSuite に変わる点に対応しました（iutest は TestCase を廃止せず両方サポートします）
+* static_assert やコンパイルエラーが発生することを期待するテスト用の pyton プログラムを修正中 [PR](https://github.com/srz-zumix/iutest/pull/496)
+
+### CI 関連
+
+* [ci-normalize-envvars](https://github.com/srz-zumix/ci-normalize-envvars) にブランチ情報を追加しました
+  * ci-normalize-envvars は各CIサービスで定義される環境変数を透過的に使うためのシェルスクリプトです
+* [Crowdin](https://crowdin.com/) を使ってみてました
+  * 翻訳をするためのサービスであって、翻訳をしてくれるサービスではないのかな？（後者も期待してた）
+
+### OSS 関連
+
+* [googletest](https://github.com/google/googletest)
+  * GTEST_REMOVE_LEGACY_TEST_CASEAPI_ を define したときのビルド・テスト失敗修正 PR
+    * https://github.com/google/googletest/pull/2972
+    * https://github.com/google/googletest/pull/2979
+* [wandbox-api](https://github.com/srz-zumix/wandbox-api)
+  * wandbox-python で setup.py を認識できるようにしました [PR](https://github.com/srz-zumix/wandbox-api/pull/9)
+  * wandbox-CPP（Cプリプロセッサ）と wandbox-cc（C言語）を追加しました [PR](https://github.com/srz-zumix/wandbox-api/pull/11)
+  * wandbox-ruby,wandbox-mruby を追加しました [PR](https://github.com/srz-zumix/wandbox-api/pull/12)
+  * wandbox-go を追加しました [PR](https://github.com/srz-zumix/wandbox-api/pull/13)
+  * wandbox-ssl を追加しました [PR](https://github.com/srz-zumix/wandbox-api/pull/14)
+  * wandbox-js を追加しました [PR](https://github.com/srz-zumix/wandbox-api/pull/15)
+  * wandbox-tsc を追加しました [PR](https://github.com/srz-zumix/wandbox-api/pull/16)
+  * wandbox-perl を追加しました [PR](https://github.com/srz-zumix/wandbox-api/pull/17)
+  * wandbox-nim を追加しました [PR](https://github.com/srz-zumix/wandbox-api/pull/18)
+  * 一部のオプションが評価されていなかった不具合を修正しました [PR](https://github.com/srz-zumix/wandbox-api/pull/11)
+* [JetBrains All Products Pack](https://www.jetbrains.com/ja-jp/community/opensource/#support) の OSS ライセンスを取得しました
+
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2020/08/)
+  * [[GitHub Actions] Actions の PR 時に自分自身をアクションとして実行する](https://srz-zumix.blogspot.com/2020/08/github-actions-actions-pr.html)
+  * [[iutest] ドキュメントの置き場を GitHub Pages に集約した](https://srz-zumix.blogspot.com/2020/08/iutest-github-pages.html)
+  * [[Doxygen] @page の名前には小文字を使おう](https://srz-zumix.blogspot.com/2020/08/doxygen-page.html)
+  * [[技術書典] Re:VIEW Starter でクローバー「♣」を別の文字に変更する](https://srz-zumix.blogspot.com/2020/03/wip-review-starter.html)
+  * [wandbox-api の CLI に C/CPP/Go/JavaScript/Nim/OpenSSL/Perl/Python/Ruby/TypeScript を追加しました](https://srz-zumix.blogspot.com/2020/08/wandbox-api-cli-ccppgojavascriptnimopen.html)
+
+### 仕事
+
+* 約半年ぶりに出社した
+
+### その他
+
+* [CalorieMate to Programmer CUIモード](https://t.co/77LHLWVXel?amp=1) が面白かったです
+* 準同型暗号について調べたりしてます
+* [NEW GAME! 11巻](https://amzn.to/3hW0vYV)購入。癒やされる
+
 ## 0.34.4.7 (2020/07)
 
 ### iutest 関連
