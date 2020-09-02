@@ -1,5 +1,12 @@
 # 自分リリースノート (Myself Release Notes)
 
+## 0.34.6.9 (2020/09)
+
+### 仕事
+
+* [CEDEC2020](https://cedec.cesa.or.jp/2020/) に参加しました
+
+
 ## 0.34.5.8 (2020/08)
 
 ### iutest 関連
