@@ -2,6 +2,14 @@
 
 ## 0.34.6.9 (2020/09)
 
+### OSS 関連
+
+* [wandbox-api](https://github.com/srz-zumix/wandbox-api)
+  * アクティブに更新してるのでリリースごとにまとめました
+  * [v0.9.14](https://github.com/srz-zumix/wandbox-api/releases/tag/v0.9.14)
+    * Bash,Elixir に対応
+    * Elixir の mix 解釈に対応。ただし Wandbox 側での実行時に失敗するので実行はできない
+
 ### 仕事
 
 * [CEDEC2020](https://cedec.cesa.or.jp/2020/) に参加しました
