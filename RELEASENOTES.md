@@ -19,6 +19,7 @@
 ### CI 関連
 
 * [AzurePipelines][] で iutest に Visual Studio を使ったビルドとテストを追加しました [PR](https://github.com/srz-zumix/iutest/pull/502)
+* このリリースノートの CI サービスに [Sider][] を導入しました
 
 ### ブログ/執筆
 
@@ -166,6 +167,7 @@ Wandbox を使わず gcc/clang の Docker image を使って検証していま�
 [Lizard]:https://github.com/terryyin/lizard
 [RazorOps]:http://razorops.com/
 [Shippable]:https://app.shippable.com/
+[Sider]:https://sider.review/
 [Wandbox]:https://wandbox.org/
 [Wandbox API]:https://github.com/melpon/wandbox/blob/master/kennel2/API.rst
 [wandbox-api]:https://github.com/srz-zumix/wandbox-api
