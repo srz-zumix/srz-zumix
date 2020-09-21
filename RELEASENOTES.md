@@ -7,6 +7,7 @@
 * `[[likely]]` `[[unlikely]]` 属性に対応しました [PR](https://github.com/srz-zumix/iutest/pull/503)
 * Visual Studio における例外なしビルドのテストの追加と不具合を修正しました [PR](https://github.com/srz-zumix/iutest/pull/502)
 * clang でオーバーロードされた private 関数にアクセスできない問題に対応しました [PR](https://github.com/srz-zumix/iutest/pull/501)
+* zapcc でもコンパイルエラーを期待するテストをするようにしました [PR](https://github.com/srz-zumix/iutest/pull/509)
 
 ### OSS 関連
 
