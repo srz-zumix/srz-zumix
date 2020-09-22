@@ -108,7 +108,7 @@
 * [Twitter の CI/CD リスト](https://twitter.com/i/lists/1037699078723854336)を更新しました （+Appcircle）
 * iutest
   * [AzurePipelines][] でパスフィルターを設定
-  * [RazorOps][] のトライアルが終わったためか [CentOS 5 + gcc 3.4.6 な Docker image]() での CI ができなくなっていたので別 CI サービス ([Drone.io][]) に移動しました
+  * [RazorOps][] のトライアルが終わったためか [CentOS 5 + gcc 3.4.6 な Docker image](https://hub.docker.com/repository/docker/srzzumix/gcc3) での CI ができなくなっていたので別 CI サービス ([Drone.io][]) に移動しました
   * [Wandbox][] に依存していたコンパイラマトリックス検証を [Wercker][]/[Shippable][] から [Drone.io][] に引っ越しました  
 Wandbox を使わず gcc/clang の Docker image を使って検証しています
   * [Bitrise][] のワークフローをリポジトリの yaml を実行するようにしたことで fork された PR が失敗するようになっていたのを修正 [PR476](https://github.com/srz-zumix/iutest/pull/476)
