@@ -27,6 +27,7 @@
 * [ブログズミ](https://srz-zumix.blogspot.com/2020/09/)
   * [[AppVeyor] fatal: reference is not a tree が出る場合の対応](https://srz-zumix.blogspot.com/2020/09/appveyor-fatal-reference-is-not-tree.html)
   * [[Re:VIEW Starter][Re:VIEW] 訳あって Starter から素の Re:VIEW に戻すツールをリリースしました](https://srz-zumix.blogspot.com/2020/09/review-starterreview-starter-review.html)
+  * [GitHub Sponsor のバッジを付ける方法](https://srz-zumix.blogspot.com/2020/09/github-sponsor.html)
 * 執筆
   * [無料で始める！CIサービスカタログ](https://nextpublishing.jp/book/12228.html)
 
