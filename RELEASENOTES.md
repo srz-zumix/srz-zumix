@@ -30,6 +30,9 @@
   * [GitHub Sponsor のバッジを付ける方法](https://srz-zumix.blogspot.com/2020/09/github-sponsor.html)
 * 執筆
   * [無料で始める！CIサービスカタログ](https://nextpublishing.jp/book/12228.html)
+* [Zenn][]
+  * [Zenn][] での執筆を始めました
+  * [CI サービスを活用して Zenn の執筆環境を作る - 序章 | Zenn](https://zenn.dev/srz_zumix/articles/9404b45e22cdf0f65ddd)
 
 ### 仕事
 
@@ -175,3 +178,4 @@ Wandbox を使わず gcc/clang の Docker image を使って検証していま�
 [wandbox-api]:https://github.com/srz-zumix/wandbox-api
 [Wercker]:https://app.wercker.com/
 [zapcc]:https://github.com/yrnkrn/zapcc
+[Zenn]:https://zenn.dev/srz_zumix
