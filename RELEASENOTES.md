@@ -8,6 +8,7 @@
 * Visual Studio における例外なしビルドのテストの追加と不具合を修正しました [PR](https://github.com/srz-zumix/iutest/pull/502)
 * clang でオーバーロードされた private 関数にアクセスできない問題に対応しました [PR](https://github.com/srz-zumix/iutest/pull/501)
 * zapcc でもコンパイルエラーを期待するテストをするようにしました [PR](https://github.com/srz-zumix/iutest/pull/509)
+* Optional Matcher を追加 [PR](https://github.com/srz-zumix/iutest/pull/508)
 
 ### OSS 関連
 
@@ -16,6 +17,8 @@
   * [v0.9.14](https://github.com/srz-zumix/wandbox-api/releases/tag/v0.9.14)
     * Bash,Elixir に対応
     * Elixir の mix 解釈に対応。ただし Wandbox 側での実行時に失敗するので実行はできない
+* [awesome-cpp-warning][]
+  * C++ の警告対応表を作り始めました
 
 ### CI 関連
 
@@ -28,11 +31,14 @@
   * [[AppVeyor] fatal: reference is not a tree が出る場合の対応](https://srz-zumix.blogspot.com/2020/09/appveyor-fatal-reference-is-not-tree.html)
   * [[Re:VIEW Starter][Re:VIEW] 訳あって Starter から素の Re:VIEW に戻すツールをリリースしました](https://srz-zumix.blogspot.com/2020/09/review-starterreview-starter-review.html)
   * [GitHub Sponsor のバッジを付ける方法](https://srz-zumix.blogspot.com/2020/09/github-sponsor.html)
+  * [[C++] 警告のコンパイラー対応表を作り始めました](https://srz-zumix.blogspot.com/2020/09/c.html)
 * 執筆
   * [無料で始める！CIサービスカタログ](https://nextpublishing.jp/book/12228.html)
 * [Zenn][]
   * [Zenn][] での執筆を始めました
   * [CI サービスを活用して Zenn の執筆環境を作る - 序章 | Zenn](https://zenn.dev/srz_zumix/articles/9404b45e22cdf0f65ddd)
+  * [[C++] GCC/Clang/VisualStudio の警告をまとめているので紹介 | Zenn](https://zenn.dev/srz_zumix/articles/4c72e544b0034cc796da)
+  * [[textlint] Zenn 独自記法への警告を除外する | Zenn](https://zenn.dev/srz_zumix/articles/cb21af1a86fc01cb829d)
 
 ### 仕事
 
@@ -161,6 +167,7 @@ Wandbox を使わず gcc/clang の Docker image を使って検証していま�
 
 [Appcircle]:https://appcircle.io/
 [AzurePipelines]:https://azure.microsoft.com/ja-jp/services/devops/pipelines/
+[awesome-cpp-warning]:https://github.com/srz-zumix/awesome-cpp-warning
 [Bitrise]:https://www.bitrise.io/
 [ci-normalize-envvars]:https://github.com/srz-zumix/ci-normalize-envvars
 [ci-specs]:https://github.com/srz-zumix/ci-specs
