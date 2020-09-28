@@ -32,6 +32,7 @@
   * [[Re:VIEW Starter][Re:VIEW] 訳あって Starter から素の Re:VIEW に戻すツールをリリースしました](https://srz-zumix.blogspot.com/2020/09/review-starterreview-starter-review.html)
   * [GitHub Sponsor のバッジを付ける方法](https://srz-zumix.blogspot.com/2020/09/github-sponsor.html)
   * [[C++] 警告のコンパイラー対応表を作り始めました](https://srz-zumix.blogspot.com/2020/09/c.html)
+  * [Zenn とブログズミ](https://srz-zumix.blogspot.com/2020/09/zenn.html)
 * 執筆
   * [無料で始める！CIサービスカタログ](https://nextpublishing.jp/book/12228.html)
 * [Zenn][]
@@ -39,6 +40,7 @@
   * [CI サービスを活用して Zenn の執筆環境を作る - 序章 | Zenn](https://zenn.dev/srz_zumix/articles/9404b45e22cdf0f65ddd)
   * [[C++] GCC/Clang/VisualStudio の警告をまとめているので紹介 | Zenn](https://zenn.dev/srz_zumix/articles/4c72e544b0034cc796da)
   * [[textlint] Zenn 独自記法への警告を除外する | Zenn](https://zenn.dev/srz_zumix/articles/cb21af1a86fc01cb829d)
+  * [[C++] override すべき関数の名前 typo に気づける idiom | Zenn](https://zenn.dev/srz_zumix/articles/ae351b73da285447fdc0)
 
 ### 仕事
 
