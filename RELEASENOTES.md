@@ -21,11 +21,14 @@
     * Elixir の mix 解釈に対応。ただし Wandbox 側での実行時に失敗するので実行はできない
 * [awesome-cpp-warning][]
   * C++ の警告対応表を作り始めました
+* [cpprefjp][]
+  * [[[likely]][[unlikely]] の実装状況を更新 by srz-zumix · Pull Request #805 · cpprefjp/site](https://github.com/cpprefjp/site/pull/805)
 
 ### CI 関連
 
 * [AzurePipelines][] で iutest に Visual Studio を使ったビルドとテストを追加しました [PR](https://github.com/srz-zumix/iutest/pull/502)
 * このリリースノートの CI サービスに [Sider][] を導入しました
+* Wercker で `Error provisioning Remote Docker Daemon from Remote Docker Daemon API service at rdd.default.svc.cluster.local:8888 for runID ...` で失敗する問題を調査中  
 
 ### ブログ/執筆
 
@@ -176,6 +179,7 @@ Wandbox を使わず gcc/clang の Docker image を使って検証していま�
 [ci-normalize-envvars]:https://github.com/srz-zumix/ci-normalize-envvars
 [ci-specs]:https://github.com/srz-zumix/ci-specs
 [ci-trigger]:https://github.com/srz-zumix/ci-trigger
+[cpprefjp]:https://cpprefjp.github.io/
 [Drone.io]:https://drone.io/
 [GoogleTest]:https://github.com/google/googletest
 [iutest]:https://github.com/srz-zumix/iutest
