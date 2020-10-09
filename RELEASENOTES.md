@@ -8,9 +8,24 @@
 
 ### OSS 関連
 
+* [awesome-cpp-warning][]
+  * ときどき更新してます
+  
 ### ブログ/執筆
 
+* [ブログズミ](https://srz-zumix.blogspot.com/2020/10/)
+  * [GitHub Actions のコンテナに setup-python したときの error while loading shared libraries 対応](https://srz-zumix.blogspot.com/2020/10/github-actions-setup-python-error-while.html)
+* [Zenn][]
+  * [Zenn の @[tweet] の挙動調査](https://zenn.dev/srz_zumix/articles/4db858c9776081d3191e)
+
 ### 仕事
+
+* 健康診断しました
+  * 体重は思ったほど落ちてませんでした。おそらく肉体の限界なのでしょう
+  * 視力はまたさらに落ちたかも
+* リモートデスクトップで OpenGL が使えない問題を解決した
+  * いちいち VNC で起動してから RDP に戻ったりしてたのですが助かりました
+  * [OpenGLを使えるリモートデスクトップを構成する – すらりん日記](https://blog.techlab-xe.net/enable-opengl-rdp-nvidia/)
 
 ## 0.34.6.9 (2020/09)
 
