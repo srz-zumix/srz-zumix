@@ -4,6 +4,9 @@
 
 ### iutest 関連
 
+* 例外発生時にも SCOPED_TRACE のメッセージを出力できるように修正 [PR](https://github.com/srz-zumix/iutest/pull/264)
+  * ただし、ユーザーがハンドリングした場合に対応してないので良い方法模索中
+
 ### CI 関連
 
 ### OSS 関連
