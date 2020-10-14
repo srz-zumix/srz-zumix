@@ -13,6 +13,9 @@
 
 * [awesome-cpp-warning][]
   * ときどき更新してます
+* [textlint-plugin-review-starter][]
+  * [Re:VIEW Starter][] 用の [textlint][] プラグインをリリースしました  
+   [textlint-plugin-review-starter - npm](https://www.npmjs.com/package/textlint-plugin-review-starter)
   
 ### ブログ/執筆
 
@@ -216,8 +219,11 @@ Wandbox を使わず gcc/clang の Docker image を使って検証していま�
 [LGTM.com]:https://lgtm.com/
 [Lizard]:https://github.com/terryyin/lizard
 [RazorOps]:http://razorops.com/
+[Re:VIEW Starter]:https://kauplan.org/reviewstarter/
 [Shippable]:https://app.shippable.com/
 [Sider]:https://sider.review/
+[textlint]:https://github.com/textlint/textlint
+[textlint-plugin-review-starter]:https://github.com/srz-zumix/textlint-plugin-review-starter
 [Wandbox]:https://wandbox.org/
 [Wandbox API]:https://github.com/melpon/wandbox/blob/master/kennel2/API.rst
 [wandbox-api]:https://github.com/srz-zumix/wandbox-api
