@@ -4,25 +4,48 @@
 
 ### iutest 関連
 
-* 例外発生時にも SCOPED_TRACE のメッセージを出力できるように修正 [PR](https://github.com/srz-zumix/iutest/pull/264)
+* 例外発生時にも SCOPED_TRACE のメッセージを出力できるように修正 https://github.com/srz-zumix/iutest/pull/264
   * ただし、ユーザーがハンドリングした場合に対応してないので良い方法模索中
+* Wandbox の API 制限を考慮し Wandbox 上で iutest を使うテストマトリックスを廃止  
+上記に伴い iuwandbox を deprecated に変更  
+ファイルサイズ削減 https://github.com/srz-zumix/iutest/pull/513
+* より厳しい警告オプションを設定 https://github.com/srz-zumix/iutest/pull/517
+
 
 ### CI 関連
 
+* TeamCity Cloud Open Beta を使い始めました
+* DockerHub の pull 制限に対応中 https://github.com/srz-zumix/iutest/issues/519
+* GitHub Actions の set-env コマンドは deprecated になったので対応しました https://github.com/srz-zumix/iutest/pull/516/files
+
 ### OSS 関連
 
+* [wandbox-api][]
+  * [v0.9.16](https://github.com/srz-zumix/wandbox-api/releases/tag/v0.9.16)
+    * D に対応
 * [awesome-cpp-warning][]
   * ときどき更新してます
 * [textlint-plugin-review-starter][]
   * [Re:VIEW Starter][] 用の [textlint][] プラグインをリリースしました  
    [textlint-plugin-review-starter - npm](https://www.npmjs.com/package/textlint-plugin-review-starter)
+* Docker
+  * [docker-gilot](https://github.com/srz-zumix/docker-gilot)
+    * 最新版のビルド失敗に対応
+    * バージョンタグに対応
+  * [docker-zapcc](https://github.com/srz-zumix/docker-zapcc)
+    * Ubuntu のバージョンに対応（latest, bionic）
+    * 定期ビルドに対応
   
 ### ブログ/執筆
 
 * [ブログズミ](https://srz-zumix.blogspot.com/2020/10/)
   * [GitHub Actions のコンテナに setup-python したときの error while loading shared libraries 対応](https://srz-zumix.blogspot.com/2020/10/github-actions-setup-python-error-while.html)
+  * [OpenSTF を Windows の Docker 上で動かす](https://srz-zumix.blogspot.com/2020/10/openstf-windows-docker.html)
+  * [lizard で C++ コードメトリクス](https://srz-zumix.blogspot.com/2020/10/lizard-c.html)
+  * [[C++][IWYU] Include What You Use CL を VS2019 対応しました](https://srz-zumix.blogspot.com/2020/10/ciwyu-include-what-you-use-cl-vs2019.html)
 * [Zenn][]
   * [Zenn の @[tweet] の挙動調査](https://zenn.dev/srz_zumix/articles/4db858c9776081d3191e)
+  * [Zenn の記事を private/public repository で同期する GitHub Actions](https://zenn.dev/srz_zumix/articles/d67dd4d082794929902a)
 
 ### 仕事
 
