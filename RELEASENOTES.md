@@ -4,7 +4,20 @@
 
 ### iutest 関連
 
+### CI 関連
+
+* DockerHub の pull 制限に対応中 https://github.com/srz-zumix/iutest/issues/519
+* Travis CI のプラン変更に対応
+
+### OSS 関連
+
+* [TampermonkeyUserScripts][]
+  * [ページを iframe に分割するスクリプトを追加](https://github.com/srz-zumix/TampermonkeyUserScripts#iframe-splitter)
+
 ### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2020/11/)
+  * [Docker login しているか確かめる方法](https://srz-zumix.blogspot.com/2020/11/docker-login.html)
 
 ## 0.34.7.10 (2020/10)
 
@@ -251,6 +264,7 @@ Wandbox を使わず gcc/clang の Docker image を使って検証していま�
 [Re:VIEW Starter]:https://kauplan.org/reviewstarter/
 [Shippable]:https://app.shippable.com/
 [Sider]:https://sider.review/
+[TampermonkeyUserScripts]:https://github.com/srz-zumix/TampermonkeyUserScripts
 [textlint]:https://github.com/textlint/textlint
 [textlint-plugin-review-starter]:https://github.com/srz-zumix/textlint-plugin-review-starter
 [Wandbox]:https://wandbox.org/
