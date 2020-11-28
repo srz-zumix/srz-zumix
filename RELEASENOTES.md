@@ -4,10 +4,16 @@
 
 ### iutest 関連
 
+* Xcode 向けの CMake 設定を修正
+* DockerHub の pull 制限に対応中 https://github.com/srz-zumix/iutest/issues/519
+* RazorOps v2 に移行中 https://github.com/srz-zumix/iutest/pull/541
+
 ### CI 関連
 
 * DockerHub の pull 制限に対応中 https://github.com/srz-zumix/iutest/issues/519
-* Travis CI のプラン変更に対応
+* [Appcircle][] お試し中（１ヶ月のビルド回数制限使い切ったので来月再開）
+* [Travis CI のプラン変更](https://blog.travis-ci.com/2020-11-02-travis-ci-new-billing)に対応中
+  * OSS クレジットを申請中
 
 ### OSS 関連
 
@@ -18,6 +24,9 @@
 
 * [ブログズミ](https://srz-zumix.blogspot.com/2020/11/)
   * [Docker login しているか確かめる方法](https://srz-zumix.blogspot.com/2020/11/docker-login.html)
+  * [Travis CI の新プランについて](https://srz-zumix.blogspot.com/2020/11/travis-ci.html)
+  * [[CI] TeamCity Cloud OpenBeta を使ってみた](https://srz-zumix.blogspot.com/2020/11/ci-teamcity-cloud-openbeta.html)
+  * [[C++] -Weverything で得たもの](https://srz-zumix.blogspot.com/2020/11/c-weverything.html)
 
 ## 0.34.7.10 (2020/10)
 
