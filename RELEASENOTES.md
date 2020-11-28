@@ -27,6 +27,7 @@
   * [Travis CI の新プランについて](https://srz-zumix.blogspot.com/2020/11/travis-ci.html)
   * [[CI] TeamCity Cloud OpenBeta を使ってみた](https://srz-zumix.blogspot.com/2020/11/ci-teamcity-cloud-openbeta.html)
   * [[C++] -Weverything で得たもの](https://srz-zumix.blogspot.com/2020/11/c-weverything.html)
+* [技術書典10][] に参加申し込みしました https://twitter.com/srz_zumix/status/1332570611374116869
 
 ## 0.34.7.10 (2020/10)
 
@@ -282,3 +283,4 @@ Wandbox を使わず gcc/clang の Docker image を使って検証していま�
 [Wercker]:https://app.wercker.com/
 [zapcc]:https://github.com/yrnkrn/zapcc
 [Zenn]:https://zenn.dev/srz_zumix
+[技術書典10]:https://techbookfest.org/event/tbf10
