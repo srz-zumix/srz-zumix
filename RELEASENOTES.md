@@ -1,5 +1,12 @@
 # 自分リリースノート (Myself Release Notes)
 
+## 0.34.9.12 (2020/12)
+
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2020/12/)
+  * [[C++] Concepts で外部ライブラリの template よりも優先されるオーバーロード関数を書く](https://srz-zumix.blogspot.com/2020/03/wipc-concept-template.html)
+
 ## 0.34.8.11 (2020/11)
 
 ### iutest 関連
