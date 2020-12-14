@@ -2,10 +2,39 @@
 
 ## 0.34.9.12 (2020/12)
 
+### iutest 関連
+
+* wine 上の msvc でのテストを追加 https://github.com/srz-zumix/iutest/pull/545
+* DockerHub の pull 制限に対応中 https://github.com/srz-zumix/iutest/issues/519
+  * Drone の対応が不完全だったのを修正 https://github.com/srz-zumix/iutest/pull/550
+* RazorOps v2 に移行 https://github.com/srz-zumix/iutest/pull/541
+  * Thanks dsyoi https://github.com/srz-zumix/iutest/pull/546
+
+### CI 関連
+
+* [Travis CI のプラン変更](https://blog.travis-ci.com/2020-11-02-travis-ci-new-billing)に対応中
+  * とりあえず 50,000 クレジットもらった
+  * OSS クレジットはまだ
+  * 公式にリツイートされたら・・  
+    https://twitter.com/srz_zumix/status/1334360672549761024
+    https://www.reddit.com/r/programming/comments/k8v6u2/travis_ci_is_no_longer_providing_ci_minutes_for/
+  * 信じて待つのみ・・
+* [Appcircle][] お試し中
+  * なぜか一ヶ月経っても制限解除されなかったのでお問い合わせして対応してもらった
+
 ### ブログ/執筆
 
 * [ブログズミ](https://srz-zumix.blogspot.com/2020/12/)
   * [[C++] Concepts で外部ライブラリの template よりも優先されるオーバーロード関数を書く](https://srz-zumix.blogspot.com/2020/03/wipc-concept-template.html)
+* [技術書典10][] 参加決定
+
+### 仕事
+
+* Jenkins おじさんおじさん
+
+### その他
+
+* 英語わからん
 
 ## 0.34.8.11 (2020/11)
 
