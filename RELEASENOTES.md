@@ -24,7 +24,7 @@
 
 ### ブログ/執筆
 
-* [C++ Advent Calendar]() に参加しました
+* [C++ Advent Calendar 2020](https://qiita.com/advent-calendar/2020/cxx) に参加しました
 * [ブログズミ](https://srz-zumix.blogspot.com/2020/12/)
   * [[C++] Concepts で外部ライブラリの template よりも優先されるオーバーロード関数を書く](https://srz-zumix.blogspot.com/2020/03/wipc-concept-template.html)
   * [Zapcc を使った複数プログラムの並列ビルドでハマった話](https://srz-zumix.blogspot.com/2020/12/zapcc.html)
