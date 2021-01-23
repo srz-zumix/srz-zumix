@@ -2,6 +2,33 @@
 
 ## 0.34.10.1 (2021/01)
 
+### iutest 関連
+
+ * Google Test 互換性対応の issue 片付け中 https://github.com/srz-zumix/iutest/labels/compatibility
+ * final おじさん https://github.com/srz-zumix/iutest/pull/559
+   * [［C++］final指定子と最適化 - 地面を見下ろす少年の足蹴にされる私](https://onihusube.hatenablog.com/entry/2018/11/23/022618)
+
+### CI 関連
+
+ * Travis CI のクレジット枯渇に対応中
+ * [Appcircle][] お試し中
+   * Appcircle の xcode build のポスト処理で失敗してるのの解決に時間かかってる（一旦自前でビルドにするかも）
+   
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2021/01/)
+  * [【技術書典10】「あつまれ CI サービス 2020冬」の販売を開始しました](https://srz-zumix.blogspot.com/2021/01/10-ci-2020.html)
+  * [[Re:VIEW] mapfile 中の table が正しく表示されない場合の対応方法](https://srz-zumix.blogspot.com/2020/12/review-mapfile-table.html)
+  * [[review-retrovert] Re:VIEW Starter → Re:VIEW 4/5 に対応しました](https://srz-zumix.blogspot.com/2021/01/review-retrovert-review-starter-review.html)
+* [技術書典10][]
+  * [詳解 Integromat iPaaS 完全入門][] 販売
+  * [あつまれ CI サービス 2020冬][] 販売
+  * [Booth 虎空棘魚][] での販売開始
+
+### 仕事
+
+* ansible やったり terraform やったり
+* JCasC やったり JobDSL やったり
 
 ## 0.34.9.12 (2020/12)
 
