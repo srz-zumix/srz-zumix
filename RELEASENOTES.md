@@ -5,15 +5,27 @@
 ### iutest 関連
 
  * Google Test 互換性対応の issue 片付け中 https://github.com/srz-zumix/iutest/labels/compatibility
+   * Google Test 互換性テストで xml 出力しようとするとクラッシュする問題を修正 https://github.com/srz-zumix/iutest/pull/563
  * final おじさん https://github.com/srz-zumix/iutest/pull/559
    * [［C++］final指定子と最適化 - 地面を見下ろす少年の足蹴にされる私](https://onihusube.hatenablog.com/entry/2018/11/23/022618)
+ * ::std::filesyste::file_stats の operator == は C++20 以降 https://github.com/srz-zumix/iutest/pull/556
+ * GitHub Actions でイメージ指定する場合の docker login 対応 https://github.com/srz-zumix/iutest/pull/557
 
 ### CI 関連
 
  * Travis CI のクレジット枯渇に対応中
  * [Appcircle][] お試し中
    * Appcircle の xcode build のポスト処理で失敗してるのの解決に時間かかってる（一旦自前でビルドにするかも）
-   
+   * [ci-specs][]/[ci-normalize-envvars][] に追記
+ * [AppVeyor][] でテスト結果の集計対応中 https://github.com/srz-zumix/iutest/issues/239
+
+### OSS 関連
+
+ * Go 言語で Google カレンダーの操作をするコードを書いてました https://github.com/srz-zumix/go963
+   * 書いたはいいけど別手法のものを採用することにしたので、これ以上いじることはない見込み
+ * [Re:VIEW Starter][] -> [Re:VIEW][] ツール [review-retrovert][] の更新
+ * Re:VIEW (Starter) の画像ファイルのフォーマットチェック用 GitHub Actions [actions-book-image-check][] 更新
+ 
 ### ブログ/執筆
 
 * [ブログズミ](https://srz-zumix.blogspot.com/2021/01/)
@@ -29,6 +41,13 @@
 
 * ansible やったり terraform やったり
 * JCasC やったり JobDSL やったり
+
+### その他
+
+ * findy やってみた
+   * Python の偏差値が C++ の偏差値超えてて、そんなもんかと思った
+   * Javascript とか書いてる記憶がないんだけどな
+   * https://twitter.com/srz_zumix/status/1355149364939767811
 
 ## 0.34.9.12 (2020/12)
 
@@ -329,6 +348,7 @@ Wandbox を使わず gcc/clang の Docker image を使って検証していま�
 * システムヘッダーの警告を有効にして遊んでました [https://github.com/srz-zumix/iutest/pull/465](https://github.com/srz-zumix/iutest/pull/465)
   * システムヘッダーってテストされてて警告はなにもないと思いこんでいましたが、全然そんなことなかった・・
 
+[actions-book-image-check]:https://github.com/srz-zumix/actions-book-image-check
 [Appcircle]:https://appcircle.io/
 [AzurePipelines]:https://azure.microsoft.com/ja-jp/services/devops/pipelines/
 [awesome-cpp-warning]:https://github.com/srz-zumix/awesome-cpp-warning
@@ -343,6 +363,8 @@ Wandbox を使わず gcc/clang の Docker image を使って検証していま�
 [LGTM.com]:https://lgtm.com/
 [Lizard]:https://github.com/terryyin/lizard
 [RazorOps]:http://razorops.com/
+[Re:VIEW]:https://reviewml.org/
+[review-retrovert]:https://github.com/srz-zumix/review-retrovert
 [Re:VIEW Starter]:https://kauplan.org/reviewstarter/
 [Shippable]:https://app.shippable.com/
 [Sider]:https://sider.review/
