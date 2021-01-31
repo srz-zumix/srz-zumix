@@ -1,5 +1,54 @@
 # 自分リリースノート (Myself Release Notes)
 
+## 0.34.10.1 (2021/01)
+
+### iutest 関連
+
+ * Google Test 互換性対応の issue 片付け中 https://github.com/srz-zumix/iutest/labels/compatibility
+   * Google Test 互換性テストで xml 出力しようとするとクラッシュする問題を修正 https://github.com/srz-zumix/iutest/pull/563
+ * final おじさん https://github.com/srz-zumix/iutest/pull/559
+   * [［C++］final指定子と最適化 - 地面を見下ろす少年の足蹴にされる私](https://onihusube.hatenablog.com/entry/2018/11/23/022618)
+ * ::std::filesyste::file_stats の operator == は C++20 以降 https://github.com/srz-zumix/iutest/pull/556
+ * GitHub Actions でイメージ指定する場合の docker login 対応 https://github.com/srz-zumix/iutest/pull/557
+
+### CI 関連
+
+ * [Travis CI のクレジット枯渇](https://blog.travis-ci.com/2020-11-02-travis-ci-new-billing)に対応中
+ * [Appcircle][] お試し中
+   * Appcircle の xcode build のポスト処理で失敗してるのの解決に時間かかってる（一旦自前でビルドにするかも）
+   * [ci-specs][]/[ci-normalize-envvars][] に追記
+ * [AppVeyor][] でテスト結果の集計対応中 https://github.com/srz-zumix/iutest/issues/239
+
+### OSS 関連
+
+ * Go 言語で Google カレンダーの操作をするコードを書いてました https://github.com/srz-zumix/go963
+   * 書いたはいいけど別手法のものを採用することにしたので、これ以上いじることはない見込み
+ * [Re:VIEW Starter][] -> [Re:VIEW][] ツール [review-retrovert][] の更新
+ * Re:VIEW (Starter) の画像ファイルのフォーマットチェック用 GitHub Actions [actions-book-image-check][] 更新
+ 
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2021/01/)
+  * [【技術書典10】「あつまれ CI サービス 2020冬」の販売を開始しました](https://srz-zumix.blogspot.com/2021/01/10-ci-2020.html)
+  * [\[Re:VIEW\] mapfile 中の table が正しく表示されない場合の対応方法](https://srz-zumix.blogspot.com/2020/12/review-mapfile-table.html)
+  * [\[review-retrovert\] Re:VIEW Starter → Re:VIEW 4/5 に対応しました](https://srz-zumix.blogspot.com/2021/01/review-retrovert-review-starter-review.html)
+* [技術書典10][]
+  * [詳解 Integromat iPaaS 完全入門][] 販売
+  * [あつまれ CI サービス 2020冬][] 販売
+  * [Booth 虎空棘魚][] での販売開始
+
+### 仕事
+
+* ansible やったり terraform やったり
+* JCasC やったり JobDSL やったり
+
+### その他
+
+ * findy やってみた
+   * Python の偏差値が C++ の偏差値超えてて、そんなもんかと思った
+   * Javascript とか書いてる記憶がないんだけどな
+   * https://twitter.com/srz_zumix/status/1355149364939767811
+
 ## 0.34.9.12 (2020/12)
 
 ### iutest 関連
@@ -26,10 +75,10 @@
 
 * [C++ Advent Calendar 2020](https://qiita.com/advent-calendar/2020/cxx) に参加しました
 * [ブログズミ](https://srz-zumix.blogspot.com/2020/12/)
-  * [[C++] Concepts で外部ライブラリの template よりも優先されるオーバーロード関数を書く](https://srz-zumix.blogspot.com/2020/03/wipc-concept-template.html)
+  * [\[C++\] Concepts で外部ライブラリの template よりも優先されるオーバーロード関数を書く](https://srz-zumix.blogspot.com/2020/03/wipc-concept-template.html)
   * [Zapcc を使った複数プログラムの並列ビルドでハマった話](https://srz-zumix.blogspot.com/2020/12/zapcc.html)
-  * [[DockerHub] AutomatedBuild でバージョンタグを自動でつける](https://srz-zumix.blogspot.com/2020/12/dockerhub-automatedbuild.html)
-  * [[C++] Clang ではオーバーロードされた private 関数に明示的な実体化時のアクセスができない？](https://srz-zumix.blogspot.com/2020/12/c-clang-private.html)
+  * [\[DockerHub\] AutomatedBuild でバージョンタグを自動でつける](https://srz-zumix.blogspot.com/2020/12/dockerhub-automatedbuild.html)
+  * [\[C++\] Clang ではオーバーロードされた private 関数に明示的な実体化時のアクセスができない？](https://srz-zumix.blogspot.com/2020/12/c-clang-private.html)
   * [【技術書典10】「詳解 Integromat iPaaS 完全入門」の販売を開始しました](https://srz-zumix.blogspot.com/2020/12/10-integromat-ipaas.html)
 * [技術書典10][]
   * [詳解 Integromat iPaaS 完全入門][] 販売
@@ -67,8 +116,8 @@
 * [ブログズミ](https://srz-zumix.blogspot.com/2020/11/)
   * [Docker login しているか確かめる方法](https://srz-zumix.blogspot.com/2020/11/docker-login.html)
   * [Travis CI の新プランについて](https://srz-zumix.blogspot.com/2020/11/travis-ci.html)
-  * [[CI] TeamCity Cloud OpenBeta を使ってみた](https://srz-zumix.blogspot.com/2020/11/ci-teamcity-cloud-openbeta.html)
-  * [[C++] -Weverything で得たもの](https://srz-zumix.blogspot.com/2020/11/c-weverything.html)
+  * [\[CI\] TeamCity Cloud OpenBeta を使ってみた](https://srz-zumix.blogspot.com/2020/11/ci-teamcity-cloud-openbeta.html)
+  * [\[C++\] -Weverything で得たもの](https://srz-zumix.blogspot.com/2020/11/c-weverything.html)
 * [技術書典10][] に参加申し込みしました https://twitter.com/srz_zumix/status/1332570611374116869
 
 ## 0.34.7.10 (2020/10)
@@ -113,9 +162,9 @@
   * [GitHub Actions のコンテナに setup-python したときの error while loading shared libraries 対応](https://srz-zumix.blogspot.com/2020/10/github-actions-setup-python-error-while.html)
   * [OpenSTF を Windows の Docker 上で動かす](https://srz-zumix.blogspot.com/2020/10/openstf-windows-docker.html)
   * [lizard で C++ コードメトリクス](https://srz-zumix.blogspot.com/2020/10/lizard-c.html)
-  * [[C++][IWYU] Include What You Use CL を VS2019 対応しました](https://srz-zumix.blogspot.com/2020/10/ciwyu-include-what-you-use-cl-vs2019.html)
+  * [\[C++\]\[IWYU\] Include What You Use CL を VS2019 対応しました](https://srz-zumix.blogspot.com/2020/10/ciwyu-include-what-you-use-cl-vs2019.html)
 * [Zenn][]
-  * [Zenn の @[tweet] の挙動調査](https://zenn.dev/srz_zumix/articles/4db858c9776081d3191e)
+  * [Zenn の @\[tweet\] の挙動調査](https://zenn.dev/srz_zumix/articles/4db858c9776081d3191e)
   * [Zenn の記事を private/public repository で同期する GitHub Actions](https://zenn.dev/srz_zumix/articles/d67dd4d082794929902a)
 
 ### 仕事
@@ -160,19 +209,19 @@
 ### ブログ/執筆
 
 * [ブログズミ](https://srz-zumix.blogspot.com/2020/09/)
-  * [[AppVeyor] fatal: reference is not a tree が出る場合の対応](https://srz-zumix.blogspot.com/2020/09/appveyor-fatal-reference-is-not-tree.html)
-  * [[Re:VIEW Starter][Re:VIEW] 訳あって Starter から素の Re:VIEW に戻すツールをリリースしました](https://srz-zumix.blogspot.com/2020/09/review-starterreview-starter-review.html)
+  * [\[AppVeyor\] fatal: reference is not a tree が出る場合の対応](https://srz-zumix.blogspot.com/2020/09/appveyor-fatal-reference-is-not-tree.html)
+  * [\[Re:VIEW Starter\]\[Re:VIEW\] 訳あって Starter から素の Re:VIEW に戻すツールをリリースしました](https://srz-zumix.blogspot.com/2020/09/review-starterreview-starter-review.html)
   * [GitHub Sponsor のバッジを付ける方法](https://srz-zumix.blogspot.com/2020/09/github-sponsor.html)
-  * [[C++] 警告のコンパイラー対応表を作り始めました](https://srz-zumix.blogspot.com/2020/09/c.html)
+  * [\[C++\] 警告のコンパイラー対応表を作り始めました](https://srz-zumix.blogspot.com/2020/09/c.html)
   * [Zenn とブログズミ](https://srz-zumix.blogspot.com/2020/09/zenn.html)
 * 執筆
   * [無料で始める！CIサービスカタログ](https://nextpublishing.jp/book/12228.html)
 * [Zenn][]
   * [Zenn][] での執筆を始めました
   * [CI サービスを活用して Zenn の執筆環境を作る - 序章 | Zenn](https://zenn.dev/srz_zumix/articles/9404b45e22cdf0f65ddd)
-  * [[C++] GCC/Clang/VisualStudio の警告をまとめているので紹介 | Zenn](https://zenn.dev/srz_zumix/articles/4c72e544b0034cc796da)
-  * [[textlint] Zenn 独自記法への警告を除外する | Zenn](https://zenn.dev/srz_zumix/articles/cb21af1a86fc01cb829d)
-  * [[C++] override すべき関数の名前 typo に気づける idiom | Zenn](https://zenn.dev/srz_zumix/articles/ae351b73da285447fdc0)
+  * [\[C++\] GCC/Clang/VisualStudio の警告をまとめているので紹介 | Zenn](https://zenn.dev/srz_zumix/articles/4c72e544b0034cc796da)
+  * [\[textlint\] Zenn 独自記法への警告を除外する | Zenn](https://zenn.dev/srz_zumix/articles/cb21af1a86fc01cb829d)
+  * [\[C++\] override すべき関数の名前 typo に気づける idiom | Zenn](https://zenn.dev/srz_zumix/articles/ae351b73da285447fdc0)
 
 ### 仕事
 
@@ -217,10 +266,10 @@
 ### ブログ/執筆
 
 * [ブログズミ](https://srz-zumix.blogspot.com/2020/08/)
-  * [[GitHub Actions] Actions の PR 時に自分自身をアクションとして実行する](https://srz-zumix.blogspot.com/2020/08/github-actions-actions-pr.html)
-  * [[iutest] ドキュメントの置き場を GitHub Pages に集約した](https://srz-zumix.blogspot.com/2020/08/iutest-github-pages.html)
-  * [[Doxygen] @page の名前には小文字を使おう](https://srz-zumix.blogspot.com/2020/08/doxygen-page.html)
-  * [[技術書典] Re:VIEW Starter でクローバー「♣」を別の文字に変更する](https://srz-zumix.blogspot.com/2020/03/wip-review-starter.html)
+  * [\[GitHub Actions\] Actions の PR 時に自分自身をアクションとして実行する](https://srz-zumix.blogspot.com/2020/08/github-actions-actions-pr.html)
+  * [\[iutest\] ドキュメントの置き場を GitHub Pages に集約した](https://srz-zumix.blogspot.com/2020/08/iutest-github-pages.html)
+  * [\[Doxygen\] @page の名前には小文字を使おう](https://srz-zumix.blogspot.com/2020/08/doxygen-page.html)
+  * [\[技術書典\] Re:VIEW Starter でクローバー「♣」を別の文字に変更する](https://srz-zumix.blogspot.com/2020/03/wip-review-starter.html)
   * [wandbox-api の CLI に C/CPP/Go/JavaScript/Nim/OpenSSL/Perl/Python/Ruby/TypeScript を追加しました](https://srz-zumix.blogspot.com/2020/08/wandbox-api-cli-ccppgojavascriptnimopen.html)
 
 ### 仕事
@@ -278,9 +327,9 @@ Wandbox を使わず gcc/clang の Docker image を使って検証していま�
 ### ブログ/執筆
 
 * [ブログズミ](https://srz-zumix.blogspot.com/2020/07/)
-  * [[Travis CI] Segmentation fault したときにスタックトレースを出力する設定](https://srz-zumix.blogspot.com/2019/10/wiptravis-ci-segmentation-fault.html)
-  * [[CI][CodeReview] LGTM.com 始めました](https://srz-zumix.blogspot.com/2020/06/cicodereview-lgtmcom.html)
-  * [[技術書] 画像のフォーマットチェックを GitHub Actions でしてみた](https://srz-zumix.blogspot.com/2020/07/github-actions.html)
+  * [\[Travis CI\] Segmentation fault したときにスタックトレースを出力する設定](https://srz-zumix.blogspot.com/2019/10/wiptravis-ci-segmentation-fault.html)
+  * [\[CI\]\[CodeReview\] LGTM.com 始めました](https://srz-zumix.blogspot.com/2020/06/cicodereview-lgtmcom.html)
+  * [\[技術書\] 画像のフォーマットチェックを GitHub Actions でしてみた](https://srz-zumix.blogspot.com/2020/07/github-actions.html)
   * [iutest v1.17.1 をリリースしました](https://srz-zumix.blogspot.com/2020/07/iutest-v1171.html)
   * Blogger の公開日設定がいまいち使いこなせてなくておかしくなっていたのを修正しました（公開日ではなく最終更新日になってる？）
 * 執筆
@@ -299,10 +348,13 @@ Wandbox を使わず gcc/clang の Docker image を使って検証していま�
 * システムヘッダーの警告を有効にして遊んでました [https://github.com/srz-zumix/iutest/pull/465](https://github.com/srz-zumix/iutest/pull/465)
   * システムヘッダーってテストされてて警告はなにもないと思いこんでいましたが、全然そんなことなかった・・
 
+[actions-book-image-check]:https://github.com/srz-zumix/actions-book-image-check
 [Appcircle]:https://appcircle.io/
+[AppVeyor]:https://www.appveyor.com
 [AzurePipelines]:https://azure.microsoft.com/ja-jp/services/devops/pipelines/
 [awesome-cpp-warning]:https://github.com/srz-zumix/awesome-cpp-warning
 [Bitrise]:https://www.bitrise.io/
+[Booth 虎空棘魚]:https://srz-zumix.booth.pm/
 [ci-normalize-envvars]:https://github.com/srz-zumix/ci-normalize-envvars
 [ci-specs]:https://github.com/srz-zumix/ci-specs
 [ci-trigger]:https://github.com/srz-zumix/ci-trigger
@@ -313,6 +365,8 @@ Wandbox を使わず gcc/clang の Docker image を使って検証していま�
 [LGTM.com]:https://lgtm.com/
 [Lizard]:https://github.com/terryyin/lizard
 [RazorOps]:http://razorops.com/
+[Re:VIEW]:https://reviewml.org/
+[review-retrovert]:https://github.com/srz-zumix/review-retrovert
 [Re:VIEW Starter]:https://kauplan.org/reviewstarter/
 [Shippable]:https://app.shippable.com/
 [Sider]:https://sider.review/
@@ -325,5 +379,6 @@ Wandbox を使わず gcc/clang の Docker image を使って検証していま�
 [Wercker]:https://app.wercker.com/
 [zapcc]:https://github.com/yrnkrn/zapcc
 [Zenn]:https://zenn.dev/srz_zumix
+[あつまれ CI サービス 2020冬]:https://techbookfest.org/product/6709381972361216?productVariantID=5598210112356352
 [技術書典10]:https://techbookfest.org/event/tbf10
 [詳解 Integromat iPaaS 完全入門]:https://techbookfest.org/product/5328534149005312?productVariantID=6553683770736640
