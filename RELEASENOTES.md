@@ -11,7 +11,7 @@
 
 * [ci-trigger][]
   * [AppVeyor][]/[Azure Pipelines][] 更新
-＊ [ci-skip][]
+* [ci-skip][]
   * [GitHub Actions][] が skip comment 対応してたので更新
 
 ### OSS 関連
