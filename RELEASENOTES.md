@@ -4,12 +4,15 @@
 
 ### iutest 関連
 
+* C++20 対応を開始 https://github.com/srz-zumix/iutest/pull/565
+* DockerHub pull rate limit 対応 ([Wercker][]) https://github.com/srz-zumix/iutest/pull/566 
+
 ### CI 関連
 
 * [ci-trigger][]
   * [AppVeyor][]/[Azure Pipelines][] 更新
 ＊ [ci-skip][]
-  * GitHub Actions が skip comment 対応してたので更新
+  * [GitHub Actions][] が skip comment 対応してたので更新
 
 ### OSS 関連
 
@@ -382,6 +385,7 @@ Wandbox を使わず gcc/clang の Docker image を使って検証していま�
 [Appcircle]:https://appcircle.io/
 [AppVeyor]:https://www.appveyor.com
 [AzurePipelines]:https://azure.microsoft.com/ja-jp/services/devops/pipelines/
+[Azure Pipelines]:https://azure.microsoft.com/ja-jp/services/devops/pipelines/
 [awesome-cpp-warning]:https://github.com/srz-zumix/awesome-cpp-warning
 [Bitrise]:https://www.bitrise.io/
 [Booth 虎空棘魚]:https://srz-zumix.booth.pm/
@@ -392,6 +396,7 @@ Wandbox を使わず gcc/clang の Docker image を使って検証していま�
 [cpprefjp]:https://cpprefjp.github.io/
 [Drone.io]:https://drone.io/
 [GoogleTest]:https://github.com/google/googletest
+[GitHub Actions]:https://github.co.jp/features/actions
 [iutest]:https://github.com/srz-zumix/iutest
 [LGTM.com]:https://lgtm.com/
 [Lizard]:https://github.com/terryyin/lizard
