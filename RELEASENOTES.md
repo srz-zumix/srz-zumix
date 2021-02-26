@@ -22,6 +22,8 @@
 * [wandbox-api][]
   * erlang,haskell,php に対応しました
   * リストアップ系サブコマンドが動作していなかった不具合を修正しました
+  * template,run-template サブコマンドを追加
+  * コンパイラーバージョンの指定に fnmatch が指定可能にしました
 * [review-retrovert][]
   * IRD 組版エミュレートスタイルを追加（Experimental）
 
@@ -31,6 +33,7 @@
   * [古い gcc が欲しくて CentOS 5 の docker image を作った話](https://srz-zumix.blogspot.com/2021/02/gcc-centos-5-docker-image.html)
   * [\[CodeShip\]\[Drone.io\] DockerHub pull rate limit に対応する](https://srz-zumix.blogspot.com/2021/02/codeshipdroneio-dockerhub-pull-rate.html)
   * [Wekan サーバーの引っ越しで mongoDB のバックアップ・リストアした（docker-compose 編）](https://srz-zumix.blogspot.com/2021/02/wekan-mongodb-docker-compose.html)
+  * [cppcheck html report](https://srz-zumix.blogspot.com/2021/02/cppcheck-html-report.html)
 
 
 ## 0.34.10.1 (2021/01)
