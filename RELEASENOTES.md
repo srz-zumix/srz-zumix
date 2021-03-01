@@ -1,5 +1,41 @@
 # 自分リリースノート (Myself Release Notes)
 
+## 0.34.11.2 (2021/02)
+
+### iutest 関連
+
+* C++20 対応を開始 https://github.com/srz-zumix/iutest/pull/565
+* DockerHub pull rate limit 対応 ([Wercker][]) https://github.com/srz-zumix/iutest/pull/566 
+
+### CI 関連
+
+* [ci-trigger][]
+  * [AppVeyor][]/[Azure Pipelines][] 更新
+* [ci-skip][]
+  * [GitHub Actions][] が skip comment 対応してたので更新
+
+### OSS 関連
+
+* [awesome-cpp-warning][]
+  * -Wnull-arithmetic, -Wambiguous-reversed-operator を追加 
+* [wandbox-builder][] にいくつか修正 PR をしました
+* [wandbox-api][]
+  * erlang,haskell,php に対応しました
+  * リストアップ系サブコマンドが動作していなかった不具合を修正しました
+  * template,run-template サブコマンドを追加
+  * コンパイラーバージョンの指定に fnmatch が指定可能にしました
+* [review-retrovert][]
+  * IRD 組版エミュレートスタイルを追加（Experimental）
+
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2021/02/)
+  * [古い gcc が欲しくて CentOS 5 の docker image を作った話](https://srz-zumix.blogspot.com/2021/02/gcc-centos-5-docker-image.html)
+  * [\[CodeShip\]\[Drone.io\] DockerHub pull rate limit に対応する](https://srz-zumix.blogspot.com/2021/02/codeshipdroneio-dockerhub-pull-rate.html)
+  * [Wekan サーバーの引っ越しで mongoDB のバックアップ・リストアした（docker-compose 編）](https://srz-zumix.blogspot.com/2021/02/wekan-mongodb-docker-compose.html)
+  * [cppcheck html report](https://srz-zumix.blogspot.com/2021/02/cppcheck-html-report.html)
+
+
 ## 0.34.10.1 (2021/01)
 
 ### iutest 関連
@@ -352,15 +388,18 @@ Wandbox を使わず gcc/clang の Docker image を使って検証していま�
 [Appcircle]:https://appcircle.io/
 [AppVeyor]:https://www.appveyor.com
 [AzurePipelines]:https://azure.microsoft.com/ja-jp/services/devops/pipelines/
+[Azure Pipelines]:https://azure.microsoft.com/ja-jp/services/devops/pipelines/
 [awesome-cpp-warning]:https://github.com/srz-zumix/awesome-cpp-warning
 [Bitrise]:https://www.bitrise.io/
 [Booth 虎空棘魚]:https://srz-zumix.booth.pm/
 [ci-normalize-envvars]:https://github.com/srz-zumix/ci-normalize-envvars
 [ci-specs]:https://github.com/srz-zumix/ci-specs
 [ci-trigger]:https://github.com/srz-zumix/ci-trigger
+[ci-skip]:https://github.com/srz-zumix/ci-skip
 [cpprefjp]:https://cpprefjp.github.io/
 [Drone.io]:https://drone.io/
 [GoogleTest]:https://github.com/google/googletest
+[GitHub Actions]:https://github.co.jp/features/actions
 [iutest]:https://github.com/srz-zumix/iutest
 [LGTM.com]:https://lgtm.com/
 [Lizard]:https://github.com/terryyin/lizard
@@ -374,6 +413,7 @@ Wandbox を使わず gcc/clang の Docker image を使って検証していま�
 [textlint]:https://github.com/textlint/textlint
 [textlint-plugin-review-starter]:https://github.com/srz-zumix/textlint-plugin-review-starter
 [Wandbox]:https://wandbox.org/
+[wandbox-builder]:https://github.com/melpon/wandbox-builder
 [Wandbox API]:https://github.com/melpon/wandbox/blob/master/kennel2/API.rst
 [wandbox-api]:https://github.com/srz-zumix/wandbox-api
 [Wercker]:https://app.wercker.com/
