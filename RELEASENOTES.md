@@ -6,6 +6,9 @@
 
 ### iutest 関連
 
+* Bitrise の stack 更新
+* CircleCI でテスト結果を集計
+
 ### OSS 関連
 
 * [wandbox-builder]
