@@ -35,5 +35,6 @@
 [iutest]:https://github.com/srz-zumix/iutest
 [Julia]:https://julialang.org/
 [Wandbox]:https://wandbox.org/
+[wandbox-api]:https://github.com/srz-zumix/wandbox-api
 [wandbox-builder]:https://github.com/melpon/wandbox-builder
 [wandbox-status]:https://github.com/srz-zumix/wandbox-status
