@@ -11,7 +11,7 @@
 
 ### OSS 関連
 
-* [wandbox-builder]
+* [wandbox-builder][]
   * いくつかの head 修正とバージョン追加をしました https://github.com/melpon/wandbox-builder/pulls?q=is%3Apr+author%3Asrz-zumix+
   * [Julia][] を足してみた https://github.com/melpon/wandbox-builder/pull/85
 * [wandbox-api][]
@@ -19,7 +19,7 @@
   * compilers/versions サブコマンドの出力を言語名でソートしました https://github.com/srz-zumix/wandbox-api/pull/37
   * verbose オプションを追加しました https://github.com/srz-zumix/wandbox-api/pull/36
 * [wandbox-status][]
-  * [Wandbox] で実行可能になっているかのステータスページを作成しました
+  * [Wandbox][] で実行可能になっているかのステータスページを作成しました
 
 ### ブログ/執筆
 
