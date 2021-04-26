@@ -4,6 +4,33 @@
 
 ## 0.35.1.4 (2021/04)
 
+### iutest 関連
+
+* Bitrise の stack 更新
+* CircleCI でテスト結果を集計
+
+### OSS 関連
+
+* [wandbox-builder][]
+  * いくつかの head 修正とバージョン追加をしました https://github.com/melpon/wandbox-builder/pulls?q=is%3Apr+author%3Asrz-zumix+
+* [wandbox-api][]
+  * 現在 [Wandbox][] で提供されている言語すべての CLI に対応
+  * ndjson/user api に対応
+ 　
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2021/03/)
+  * [ウマ娘にハマってしまっていた](https://srz-zumix.blogspot.com/2021/04/blog-post.html)
+  * [【Ruboty】Slack のリアクションに反応できるようにするプラグインを公開](https://srz-zumix.blogspot.com/2021/04/rubotyslack.html)
+  * [Jinja2 cli な kamidana の additonals として slack 拡張を書いてみた](https://srz-zumix.blogspot.com/2021/04/jinja2-cli-kamidana-additonals-slack.html)
+  * [docker build ログを今まで通りに表示する](https://srz-zumix.blogspot.com/2021/04/docker-build.html) 
+  * [CircleCI でモノレポ上の指定パスに変更があったらテストを走らせる](https://srz-zumix.blogspot.com/2021/04/circleci.html)
+
+### その他
+
+* ウマ娘
+  * 時間泥棒だというのはパワプロのときから知ってるんだけどやっちゃうな 
+
 ## 0.35.0.3 (2021/03)
 
 ### iutest 関連
