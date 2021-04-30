@@ -6,8 +6,7 @@
 
 ### iutest 関連
 
-* Bitrise の stack 更新
-* CircleCI でテスト結果を集計
+* CircleCI で path filter に対応
 
 ### OSS 関連
 
@@ -16,6 +15,15 @@
 * [wandbox-api][]
   * 現在 [Wandbox][] で提供されている言語すべての CLI に対応
   * ndjson/user api に対応
+* [Julia][] に出してた [PR](https://github.com/JuliaLang/julia/pull/40136) がマージされた
+* [Jinja2][]
+  * [kamidana][] の additionals な Slack API 拡張 [yurumikuji][] を公開
+  * [kamidana][] に Wandbox API additionals を追加した wrapper [amaterasu][] を公開
+* Unity
+  * Unity のファイルの YAML 要素を正規化するツールを公開 [unity-yaml-normalize][]
+* docker
+  * [docker-onepai-hpckit](https://github.com/srz-zumix/docker-oneapi-hpckit)
+  * [docker-oneapi-cxx](https://github.com/srz-zumix/docker-oneapi-cxx)
  　
 ### ブログ/執筆
 
@@ -42,7 +50,7 @@
 
 * [wandbox-builder][]
   * いくつかの head 修正とバージョン追加をしました https://github.com/melpon/wandbox-builder/pulls?q=is%3Apr+author%3Asrz-zumix+
-  * [Julia][] を足してみた https://github.com/melpon/wandbox-builder/pull/85
+  * [JuliaLang][] を足してみた https://github.com/melpon/wandbox-builder/pull/85
 * [wandbox-api][]
   * glob 形式のコンパイラーバージョン指定に対応しました https://github.com/srz-zumix/wandbox-api/pull/35
   * compilers/versions サブコマンドの出力を言語名でソートしました https://github.com/srz-zumix/wandbox-api/pull/37
@@ -61,9 +69,15 @@
 
 * 今年も無事 minor バージョンアップしました
 
+[amaterasu]:https://github.com/srz-zumix/amaterasu
 [iutest]:https://github.com/srz-zumix/iutest
-[Julia]:https://julialang.org/
+[Jinja2]:https://jinja.palletsprojects.com/en/2.11.x/
+[Julia]:https://github.com/JuliaLang/julia
+[JuliaLang]:https://julialang.org/
+[kamidana]:https://github.com/podhmo/kamidana
+[unity-yaml-normalize]:https://github.com/srz-zumix/unity-yaml-normalize
 [Wandbox]:https://wandbox.org/
 [wandbox-api]:https://github.com/srz-zumix/wandbox-api
 [wandbox-builder]:https://github.com/melpon/wandbox-builder
 [wandbox-status]:https://github.com/srz-zumix/wandbox-status
+[yurumikuji]:https://github.com/srz-zumix/yurumikuji
