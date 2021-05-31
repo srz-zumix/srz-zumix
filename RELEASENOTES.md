@@ -4,6 +4,21 @@
 
 ## 0.35.2.5 (2021/05)
 
+### iutest 関連
+
+
+### OSS 関連
+
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2021/05/)
+  * [DockerHub / GitHub Actions での docker build が No space left on device だったので CircleCI でビルドした話](https://srz-zumix.blogspot.com/2021/05/dockerhub-github-actions-docker-build.html)
+  * [\[技術書典\] Re:VIEW Starter で印刷・電子書籍版で config.yml を使い分ける](https://srz-zumix.blogspot.com/2020/03/wip-review-starter-configyml.html)
+  * [XCode ビルド時に codesign で errSecInternalComponent エラーが発生した場合に最初に確認すべきこと in 2021](https://srz-zumix.blogspot.com/2021/05/xcode-codesign-errsecinternalcomponent.html)
+  * [\[Debian\] pyenv install で Missing the OpenSSL lib? で失敗する場合の対応と 3.0~3.10 全部入り Dockerfile 書いた](https://srz-zumix.blogspot.com/2021/05/debian-pyenv-install-missing-openssl.html)
+  * [Linux版 UnityHub の headless に対応した Docker image](https://srz-zumix.blogspot.com/2021/05/linux-unityhub-headless-docker-image.html) 
+* 技術書典11 に応募しました
+
 ## 0.35.1.4 (2021/04)
 
 ### iutest 関連
@@ -29,7 +44,7 @@
  　
 ### ブログ/執筆
 
-* [ブログズミ](https://srz-zumix.blogspot.com/2021/03/)
+* [ブログズミ](https://srz-zumix.blogspot.com/2021/04/)
   * [ウマ娘にハマってしまっていた](https://srz-zumix.blogspot.com/2021/04/blog-post.html)
   * [【Ruboty】Slack のリアクションに反応できるようにするプラグインを公開](https://srz-zumix.blogspot.com/2021/04/rubotyslack.html)
   * [Jinja2 cli な kamidana の additonals として slack 拡張を書いてみた](https://srz-zumix.blogspot.com/2021/04/jinja2-cli-kamidana-additonals-slack.html)
