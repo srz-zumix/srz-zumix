@@ -6,8 +6,23 @@
 
 ### iutest 関連
 
+* ARM 対応 https://github.com/srz-zumix/iutest/pull/584
+* VS2010 サポート終了対応
+* Shippable から [JFrog Pipelines][] に引っ越し
+* [Travis CI][] 再開対応
+
+### CI 関連
+
+* [JFrog Pipelines][] の調査中
+* Shippable EoS 対応
 
 ### OSS 関連
+
+* docker
+  * https://github.com/srz-zumix/docker-arm-none-eabi
+  * https://github.com/srz-zumix/docker-unityhub
+* [wandbox-api][]
+  * バグ修正
 
 ### ブログ/執筆
 
@@ -88,10 +103,12 @@
 
 [amaterasu]:https://github.com/srz-zumix/amaterasu
 [iutest]:https://github.com/srz-zumix/iutest
+[JFrog Pipelines]:https://www.jfrog.com/confluence/display/JFROG/JFrog+Pipelines
 [Jinja2]:https://jinja.palletsprojects.com/en/2.11.x/
 [Julia]:https://github.com/JuliaLang/julia
 [JuliaLang]:https://julialang.org/
 [kamidana]:https://github.com/podhmo/kamidana
+[Travis CI]:https://travis-ci.com/
 [unity-yaml-normalize]:https://github.com/srz-zumix/unity-yaml-normalize
 [Wandbox]:https://wandbox.org/
 [wandbox-api]:https://github.com/srz-zumix/wandbox-api
