@@ -2,6 +2,38 @@
 
 [0.34](old/RELEASENOTES_34.md)
 
+## 0.35.2.5 (2021/05)
+
+### iutest 関連
+
+* ARM 対応 https://github.com/srz-zumix/iutest/pull/584
+* VS2010 サポート終了対応
+* Shippable から [JFrog Pipelines][] に引っ越し
+* [Travis CI][] 再開対応
+
+### CI 関連
+
+* [JFrog Pipelines][] の調査中
+* Shippable EoS 対応
+
+### OSS 関連
+
+* docker
+  * https://github.com/srz-zumix/docker-arm-none-eabi
+  * https://github.com/srz-zumix/docker-unityhub
+* [wandbox-api][]
+  * バグ修正
+
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2021/05/)
+  * [DockerHub / GitHub Actions での docker build が No space left on device だったので CircleCI でビルドした話](https://srz-zumix.blogspot.com/2021/05/dockerhub-github-actions-docker-build.html)
+  * [\[技術書典\] Re:VIEW Starter で印刷・電子書籍版で config.yml を使い分ける](https://srz-zumix.blogspot.com/2020/03/wip-review-starter-configyml.html)
+  * [XCode ビルド時に codesign で errSecInternalComponent エラーが発生した場合に最初に確認すべきこと in 2021](https://srz-zumix.blogspot.com/2021/05/xcode-codesign-errsecinternalcomponent.html)
+  * [\[Debian\] pyenv install で Missing the OpenSSL lib? で失敗する場合の対応と 3.0~3.10 全部入り Dockerfile 書いた](https://srz-zumix.blogspot.com/2021/05/debian-pyenv-install-missing-openssl.html)
+  * [Linux版 UnityHub の headless に対応した Docker image](https://srz-zumix.blogspot.com/2021/05/linux-unityhub-headless-docker-image.html) 
+* 技術書典11 に応募しました
+
 ## 0.35.1.4 (2021/04)
 
 ### iutest 関連
@@ -27,7 +59,7 @@
  　
 ### ブログ/執筆
 
-* [ブログズミ](https://srz-zumix.blogspot.com/2021/03/)
+* [ブログズミ](https://srz-zumix.blogspot.com/2021/04/)
   * [ウマ娘にハマってしまっていた](https://srz-zumix.blogspot.com/2021/04/blog-post.html)
   * [【Ruboty】Slack のリアクションに反応できるようにするプラグインを公開](https://srz-zumix.blogspot.com/2021/04/rubotyslack.html)
   * [Jinja2 cli な kamidana の additonals として slack 拡張を書いてみた](https://srz-zumix.blogspot.com/2021/04/jinja2-cli-kamidana-additonals-slack.html)
@@ -71,10 +103,12 @@
 
 [amaterasu]:https://github.com/srz-zumix/amaterasu
 [iutest]:https://github.com/srz-zumix/iutest
+[JFrog Pipelines]:https://www.jfrog.com/confluence/display/JFROG/JFrog+Pipelines
 [Jinja2]:https://jinja.palletsprojects.com/en/2.11.x/
 [Julia]:https://github.com/JuliaLang/julia
 [JuliaLang]:https://julialang.org/
 [kamidana]:https://github.com/podhmo/kamidana
+[Travis CI]:https://travis-ci.com/
 [unity-yaml-normalize]:https://github.com/srz-zumix/unity-yaml-normalize
 [Wandbox]:https://wandbox.org/
 [wandbox-api]:https://github.com/srz-zumix/wandbox-api
