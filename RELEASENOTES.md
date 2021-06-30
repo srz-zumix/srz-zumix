@@ -2,6 +2,30 @@
 
 [0.34](old/RELEASENOTES_34.md)
 
+## 0.35.3.6 (2021/06)
+
+### iutest 関連
+
+* ミリ秒出力対応
+* CI パイプライン更新（GitHub Actions/Bitrise）
+
+### CI 関連
+
+* [JFrog Pipelines][]　はじめました
+* [ci-specs][] 追記
+
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2021/06/)
+  * [JFrog Pipelines はじめました](https://srz-zumix.blogspot.com/2021/06/jfrog-pipelines.html)
+  * [iutest の CircleCI ワークフローにパスフィルターを適用した](https://srz-zumix.blogspot.com/2021/06/iutest-circleci.html)
+  * [Blogger の投稿を Integromat でツイートする Ver.2](https://srz-zumix.blogspot.com/2020/03/wip-rpa-blogger-integromat-ver2.html)
+
+### その他
+
+* 職域接種で1回目のワクチン接種しました
+  * 38.2 度まで熱上がったけど
+
 ## 0.35.2.5 (2021/05)
 
 ### iutest 関連
@@ -102,6 +126,7 @@
 * 今年も無事 minor バージョンアップしました
 
 [amaterasu]:https://github.com/srz-zumix/amaterasu
+[ci-specs]:https://github.com/srz-zumix/ci-specs
 [iutest]:https://github.com/srz-zumix/iutest
 [JFrog Pipelines]:https://www.jfrog.com/confluence/display/JFROG/JFrog+Pipelines
 [Jinja2]:https://jinja.palletsprojects.com/en/2.11.x/
