@@ -6,11 +6,24 @@
 
 ### iutest 関連
 
+* CI メンテナンス
+
 ### ブログ/執筆
 
+* [技術書典11](https://techbookfest.org/event/tbf11)
+  * [あつまれCIサービス 2021夏](https://techbookfest.org/product/6495998996119552?productVariantID=4991051045535744)
 * [ブログズミ](https://srz-zumix.blogspot.com/2021/07/)
+  * [技術書典11お疲れ様でした＆ブログのこれから](https://srz-zumix.blogspot.com/2021/07/11.html)
+  * [Re:VIEW Starter から Re:VIEW のプロジェクトに戻すツール review-retrovert 0.9.9 リリース](https://srz-zumix.blogspot.com/2021/07/review-starter-review-review-retrovert.html)
+  * [【技術書典11】 CI サービス本の増補・改訂版をリリースしました](https://srz-zumix.blogspot.com/2021/07/11-ci.html)
+  * [\[Azure Pipelines\] DockerHub pull rate limit に対応する](https://srz-zumix.blogspot.com/2021/07/azure-pipelines-dockerhub-pull-rate.html)
 
 ### その他
+
+* ワクチン接種２回目を終えました
+  * 腕の痛みは全然なかった（刺された場所が良かった？）
+  * 熱が１回目よりも出ていた気がする 38.4 までは計ったけど、以降はしんどくてぶっ倒れてた
+  * 副反応でダウンしててそのせいか気持ちもダウンしてる
 
 ## 0.35.3.6 (2021/06)
 
