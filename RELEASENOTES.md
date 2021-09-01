@@ -4,7 +4,29 @@
 
 ## 0.35.5.8 (2021/08)
 
+### iutest 関連
 
+* [CircleCI の Matrix](https://circleci.com/blog/circleci-matrix-jobs/) を使うように更新
+* [RazorOps][] が失敗し続けていたのを修正
+* [TeamCity][] のベータライセンス期限切れにより google test 互換性検証を GitHub Actions へ
+
+### OSS 関連
+
+* Docker Automated Build から GitHub Actions に移行
+* [wandbox-status][] にステータスページを追加 [Wandbox Status][]
+* [review-retrovert][] の　[v0.9.11](https://github.com/srz-zumix/review-retrovert/releases/tag/v0.9.11) を公開
+
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2021/08/)
+  * [ゲーム開発者のための SRE](https://srz-zumix.blogspot.com/2021/08/sre.html) 
+  * [DockerHub Automated Build の Webhook の代わりに GitHub Actions workflow_dispatch を使う](https://srz-zumix.blogspot.com/2021/08/dockerhub-automated-build-webhook.html)
+  * [【JFrog Pipelines】Cron Trigger を設定する](https://srz-zumix.blogspot.com/2021/08/jfrog-pipelinescron-trigger.html)
+
+### その他
+
+* [CEDEC2021][] に参加しました
+  * [ゲーム制作効率化のためのAIによる画像認識・自然言語処理への取り組み](http://cedec.cesa.or.jp/2021/session/detail/s6049c15401f23) を聞いて、形態素解析・編集距離による表記ゆれ検出を実装してみました [tails-of-words][]
 
 ## 0.35.4.7 (2021/07)
 
@@ -153,6 +175,7 @@
 * 今年も無事 minor バージョンアップしました
 
 [amaterasu]:https://github.com/srz-zumix/amaterasu
+[CEDED2021]:https://cedec.cesa.or.jp/2021/
 [ci-specs]:https://github.com/srz-zumix/ci-specs
 [iutest]:https://github.com/srz-zumix/iutest
 [JFrog Pipelines]:https://www.jfrog.com/confluence/display/JFROG/JFrog+Pipelines
@@ -160,9 +183,14 @@
 [Julia]:https://github.com/JuliaLang/julia
 [JuliaLang]:https://julialang.org/
 [kamidana]:https://github.com/podhmo/kamidana
+[RazorOps]:https://razorops.com/
+[review-retrovert]:https://github.com/srz-zumix/review-retrovert
+[tails-of-words]:https://github.com/srz-zumix/tails-of-words
+[TeamCity]:https://www.jetbrains.com/ja-jp/teamcity/cloud/
 [Travis CI]:https://travis-ci.com/
 [unity-yaml-normalize]:https://github.com/srz-zumix/unity-yaml-normalize
 [Wandbox]:https://wandbox.org/
+[Wandbox Status]:https://srz-zumix.github.io/wandbox-status/
 [wandbox-api]:https://github.com/srz-zumix/wandbox-api
 [wandbox-builder]:https://github.com/melpon/wandbox-builder
 [wandbox-status]:https://github.com/srz-zumix/wandbox-status
