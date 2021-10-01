@@ -4,6 +4,24 @@
 
 ## 0.35.6.9 (2021/09)
 
+### iutest 関連
+
+* [std::complex に対応](https://github.com/srz-zumix/iutest/pull/621)
+
+### OSS 関連
+
+* [tails-of-words v0.3.0](https://github.com/srz-zumix/tails-of-words/releases/tag/v0.3.0) をリリースしました
+
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2021/09/)
+  * [GitHub Actions でペアな値のマトリックスを組む](https://srz-zumix.blogspot.com/2021/09/github-actions.html)
+  * [CEDEC でやってた表記ゆれ検出をお試し実装してみた](https://srz-zumix.blogspot.com/2021/09/cedec.html)
+  * [GitHub Actions Composite Action で uses が使えるようになった！ ](https://srz-zumix.blogspot.com/2021/09/github-actions-composite-action-uses.html)
+
+### その他
+
+* シルバーウィークから Tales of ARISE をやってます（もうちょいでクリアだと思う）
 
 ## 0.35.5.8 (2021/08)
 
