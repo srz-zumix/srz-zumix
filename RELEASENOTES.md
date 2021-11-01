@@ -6,17 +6,38 @@
 
 ### iutest 関連
 
+* [IUTEST_ASSERT_EXIT が DeathTest の ASSERT_EXIT と命名ルールが被っている](https://github.com/srz-zumix/iutest/issues/618)
+
+### 
+
+* [tails-of-words][] v1.0 をリリース
+  *　やりたいこはやりきったと思うので 1.0 リリースして開発終了しました
+* [textlint-plugin-review-starter][] v0.1.4 リリース
+  * 行頭空白を含む用語リストに対応
+  * dependabot 導入
+
 ### ブログ/執筆
 
 * [ブログズミ](https://srz-zumix.blogspot.com/2021/10/)
+  * [Tails of Words v0.3.0 リリース](https://srz-zumix.blogspot.com/2021/10/tails-of-words-v030.html)
+  * [Process Flow Diagram を GitHub Actions で書いてみた](https://srz-zumix.blogspot.com/2021/10/process-flow-diagram-github-actions.html)
+  * [「自分リリースノート」を一年書いてみた](https://srz-zumix.blogspot.com/2021/10/blog-post.html)
+  * [npm-groovy-lint + reviewdog で Jenkins Shared Library の PR チェック](https://srz-zumix.blogspot.com/2021/10/npm-groovy-lint-reviewdog-jenkins.html)
+  * [Docker な Jenkins でプラグインインストール済みイメージを作る](https://srz-zumix.blogspot.com/2021/10/docker-jenkins.html)
 
 ### その他
 
+* Tales of ARISE クリアしました
+  * トロフィーコンプリートもしてます
+  * スキットと入手アイテムが 100% にならなかったので２周目突入するもやる気おきずに終了
+  * 収集率100%にならなくてもトロフィーコンプリートできるのは嬉しいっちゃ嬉しいがやる理由がなくなってしまった
+  * ごちそうさまでした
 * NEW GAME! 最終巻を読みました
   * 収納ボックスつきのを買って先月には手元にあったんですが、読んだら終わってしまうと思ってなかなか読めてませんでした
   * 一番思い入れ深いのは八神コウがフランスへ行くあたりですね。ちょうど自身の転職時期と重なっていて、不安な気持ちを抱えていましたが、まぁなんとかなるっしょと後押ししてもらったなと思います
   * そして１巻から読み直しました。アニメの楽曲を垂れ流しながら。本当に前向きな気持ちになれますね
   * 明日も一日がんばるぞい！ 
+* GitHub Actions で毎日自動コミットしているやつを GitHub の草に反映されないようにしたいのですが方法しってる方いませんか？
 
 ## 0.35.6.9 (2021/09)
 
@@ -224,6 +245,7 @@
 [review-retrovert]:https://github.com/srz-zumix/review-retrovert
 [tails-of-words]:https://github.com/srz-zumix/tails-of-words
 [TeamCity]:https://www.jetbrains.com/ja-jp/teamcity/cloud/
+[textlint-plugin-review-starter]:https://github.com/srz-zumix/textlint-plugin-review-starter
 [Travis CI]:https://travis-ci.com/
 [unity-yaml-normalize]:https://github.com/srz-zumix/unity-yaml-normalize
 [Wandbox]:https://wandbox.org/
