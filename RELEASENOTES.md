@@ -8,7 +8,7 @@
 
 * [IUTEST_ASSERT_EXIT が DeathTest の ASSERT_EXIT と命名ルールが被っている](https://github.com/srz-zumix/iutest/issues/618)
 
-### 
+### OSS 関連
 
 * [tails-of-words][] v1.0 をリリース
   *　やりたいこはやりきったと思うので 1.0 リリースして開発終了しました
