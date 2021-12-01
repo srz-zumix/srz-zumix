@@ -2,6 +2,33 @@
 
 [0.34](old/RELEASENOTES_34.md)
 
+## 0.35.8.11 (2021/11)
+
+### iutest 関連
+
+* C++ Core Guidlines Check に対応中 https://github.com/srz-zumix/iutest/pull/627
+
+### OSS 関連
+
+* [docker-luau][]
+  * Roblox の luau を dockerize
+* [setup-infer][] / [action-infer][]
+  * Facebook の静的解析ツール infer のセットアップおよび reviewdog アクションを作成
+
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2021/11/)
+  * [【OSS】Miro 風ホワイトボード ourboard を立ててみる](https://srz-zumix.blogspot.com/2021/11/ossmiro-ourboard.html)
+  * [xcpretty で compile_commands.json を出力しても空になってしまう理由がわかった！](https://srz-zumix.blogspot.com/2021/11/xcpretty-compilecommandsjson.html)
+  * [master/main 混在している git submodule すべてをデフォルトブランチ最新にする](https://srz-zumix.blogspot.com/2021/11/mastermain-git-submodule.html)
+
+### その他
+
+* GitHub の草が定期ジョブのコミットを集計してしまっていたのを直した
+* こたつ出した
+* もう AdventCalender の時期か。書きたいけど書けるかな？
+* SREな記事を書いてるけど進捗ダメです
+
 ## 0.35.7.10 (2021/10)
 
 ### iutest 関連
@@ -232,9 +259,12 @@
 
 * 今年も無事 minor バージョンアップしました
 
+[action-infer]:https://github.com/srz-zumix/action-infer
 [amaterasu]:https://github.com/srz-zumix/amaterasu
 [CEDED2021]:https://cedec.cesa.or.jp/2021/
 [ci-specs]:https://github.com/srz-zumix/ci-specs
+[docker-luau]:https://github.com/srz-zumix/docker-luau
+[Infer]:https://github.com/facebook/infer
 [iutest]:https://github.com/srz-zumix/iutest
 [JFrog Pipelines]:https://www.jfrog.com/confluence/display/JFROG/JFrog+Pipelines
 [Jinja2]:https://jinja.palletsprojects.com/en/2.11.x/
@@ -243,6 +273,7 @@
 [kamidana]:https://github.com/podhmo/kamidana
 [RazorOps]:https://razorops.com/
 [review-retrovert]:https://github.com/srz-zumix/review-retrovert
+[setup-infer]:https://github.com/srz-zumix/setup-infer
 [tails-of-words]:https://github.com/srz-zumix/tails-of-words
 [TeamCity]:https://www.jetbrains.com/ja-jp/teamcity/cloud/
 [textlint-plugin-review-starter]:https://github.com/srz-zumix/textlint-plugin-review-starter
