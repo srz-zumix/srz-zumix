@@ -2,6 +2,23 @@
 
 [0.34](old/RELEASENOTES_34.md)
 
+## 0.35.8.11 (2021/11)
+
+### iutest 関連
+
+* C++ Core Guidlines Check に対応中 https://github.com/srz-zumix/iutest/pull/627
+*  
+
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2021/11/)
+  * [【OSS】Miro 風ホワイトボード ourboard を立ててみる](https://srz-zumix.blogspot.com/2021/11/ossmiro-ourboard.html)
+  * [xcpretty で compile_commands.json を出力しても空になってしまう理由がわかった！](https://srz-zumix.blogspot.com/2021/11/xcpretty-compilecommandsjson.html)
+  * [master/main 混在している git submodule すべてをデフォルトブランチ最新にする](https://srz-zumix.blogspot.com/2021/11/mastermain-git-submodule.html)
+
+### その他
+
+
 ## 0.35.7.10 (2021/10)
 
 ### iutest 関連
