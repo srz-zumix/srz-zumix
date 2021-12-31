@@ -4,6 +4,34 @@
 
 ## 0.35.9.12 (2021/12)
 
+### iutest 関連
+
+* C++ Core Guidlines Check に対応中 https://github.com/srz-zumix/iutest/pull/627
+
+### OSS 関連
+
+* [wandbox-api][]
+  * OpenSSL の head がない場合があったので修正
+  * Go でローカルモジュール（相対パス）に対応 
+* [tails-of-words][]
+  * html2text でリンクを展開したときに URL をマークダウン形式で展開しないように修正 
+
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2021/12/)
+  * [CircleCI の Concurrency と Parallelism](https://srz-zumix.blogspot.com/2021/12/circleci-concurrency-parallelism.html)
+  * [Facebook 改め Meta 社の静的解析ツール Infer を GitHub Actions でかける](https://srz-zumix.blogspot.com/2021/12/facebook-meta-infer-github-actions.html)
+  * [Visual Studio でライブラリなど外部コードの警告を出さないようにする方法](https://srz-zumix.blogspot.com/2021/12/visual-studio.html)
+  * [GitHub で草生やさないようにする](https://srz-zumix.blogspot.com/2021/12/github.html)
+
+### その他
+
+* 最近執筆のペースがよくないんですがなんとか今年もアドベントカレンダー記事が書けました
+  * 本当は Core Guidelines Check のこと書きたかったけどそのうち・・
+* 健康アプリはやらないけどピクミンブルームはやってる
+  * 大分歩くことに慣れてきた。前は絶対徒歩では行かない場所にも抵抗なくなってきた
+  * といってもだいたいの日が 11 歩とか 18 歩とかなので大丈夫かな？と思ってくる  
+* 2021年もありがとうございました。2022年もよろしくおねがいします。
 
 ## 0.35.8.11 (2021/11)
 
