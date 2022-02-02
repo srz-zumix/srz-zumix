@@ -2,6 +2,30 @@
 
 [0.34](old/RELEASENOTES_34.md)
 
+## 0.35.10.1 (2022/01)
+
+### iutest 関連
+
+* C++ Core Guidlines Check に対応中 https://github.com/srz-zumix/iutest/pull/627
+
+### OSS 関連
+
+* [wandbox-api][]
+  * 新しい [Wandbox][] 環境に対応
+  * [Wandbox Status][] もあわせて更新
+
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2022/01/) 
+　　　* [bash スクリプトの実行中上書き動作が ansible copy module で再現するのか試してみた](https://srz-zumix.blogspot.com/2022/01/bash-ansible-copy-module.html)
+　　　* [GitHub Actions の action 開発者にお願いしたいメジャーバージョンアップするタイミング](https://srz-zumix.blogspot.com/2022/01/github-actions-action.html)
+　　　* [wandbox-api version 0.9.38 をリリースしました](https://srz-zumix.blogspot.com/2022/01/wandbox-api-version-0938.html)
+
+### その他
+
+* 初めて御節を買ったけど良かった
+* 最近は Jenkins をまた弄っている
+
 ## 0.35.9.12 (2021/12)
 
 ### iutest 関連
