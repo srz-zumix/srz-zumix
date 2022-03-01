@@ -2,6 +2,82 @@
 
 [0.34](old/RELEASENOTES_34.md)
 
+## 0.35.11.2 (2022/02)
+
+### iutest 関連
+
+* C++ Core Guidlines Check に対応中 https://github.com/srz-zumix/iutest/pull/627
+* gcc -fanalyzer の実行環境を模索中
+
+### OSS 関連
+
+* https://github.com/jenkinsci/configuration-as-code-plugin/pull/1904
+  * JCasC の Oerride Merge Strategy で複数のキーを含むファイルのマージで例外が出るのを修正
+* GitHub Actions 上で Jenkins を扱う研究をはじめました
+  * https://github.com/srz-zumix/setup-service-jenkins
+  * [jflint example](https://github.com/srz-zumix/github-actions-sample/blob/main/.github/workflows/reviewdog-jflint.yml)
+
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2022/02/) 
+  * [メモリ不足で gcc が kill される場合になんとかビルドする](https://srz-zumix.blogspot.com/2022/02/gcc-kill.html)
+  * [gcc -fanalyzer が実行しきれる CI サービスを求めて・・・](https://srz-zumix.blogspot.com/2022/02/gcc-fanalyzer-ci.html)
+
+### その他
+
+* 新型コロナワクチン3回目接種しました
+  * 交互接種が良いと言われてたのでモデルナ→モデルナ→ファイザーにしましたが、モデルナ3回でも（のほうが）良かった？
+  * 副反応はファイザーが圧倒的に少なかった
+  * なんにせよ気をつけて生活するのは変わらないので終息を願う
+* Integromat が Make になったので移行して試したい
+* GitHub で Mermaid 記法が使えるようになったのでテスト
+
+```mermaid
+classDiagram
+  class アグネスデジタル {
+    + スピード 3
+    + ダート 3
+    - レンタル
+  }
+  class エルコンドルパサー {
+    + 賢さ 3
+    + ダート 3
+  }
+  class オグリキャップ {
+    + パワー 2
+    + ダート 3
+  }
+  class セイウンスカイ {
+    + 青3
+    + ダート 2 or 3
+  }
+  class シンボリルドルフ {
+    + パワー 3
+    + マイル 1
+  }
+  class バレンタインミホノブルボン {
+    + 青3
+  }
+  class レンタル2 {
+    + 青3
+    + ダート 3
+    - レンタル
+  }
+  class レンタル3 {
+    + パワー3
+    + マイル 2 or 3
+    - レンタル
+  }
+  エルコンドルパサー <|-- アグネスデジタル
+  エルコンドルパサー <|-- オグリキャップ 
+  セイウンスカイ <|.. レンタル2
+  セイウンスカイ <|.. エルコンドルパサー
+   水着マルゼンスキー <|.. セイウンスカイ
+   水着マルゼンスキー <|.. バレンタインミホノブルボン
+   バレンタインミホノブルボン <|.. レンタル3
+   バレンタインミホノブルボン <|.. シンボリルドルフ
+```
+
 ## 0.35.10.1 (2022/01)
 
 ### iutest 関連
