@@ -1,3 +1,7 @@
+# 自分リリースノート (Myself Release Notes)
+
+[0.34](old/RELEASENOTES_34.md)
+
 ## 0.35.11.2 (2022/02)
 
 ### iutest 関連
