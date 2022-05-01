@@ -7,8 +7,8 @@
 
 ### iutest 関連
 
-* [Dagger][] 導入
-* alpine linux でのビルドエラー修正中 
+* [Dagger][] 導入中 https://github.com/srz-zumix/iutest/pull/653
+* alpine linux でのビルドエラー修正中 https://github.com/srz-zumix/iutest/pull/653
 * clang-tidy を実行するワークフロー作成と警告対応中 https://github.com/srz-zumix/iutest/pull/646
 * C++ Core Guidlines Check に対応中 https://github.com/srz-zumix/iutest/pull/627
 * gcc -fanalyzer の実行環境を模索中
