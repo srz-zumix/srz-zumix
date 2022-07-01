@@ -14,8 +14,6 @@
   * [Dagger][] https://github.com/srz-zumix/iutest/pull/653
   * alpine linux でのビルドエラー修正 https://github.com/srz-zumix/iutest/pull/653
 
-## 0.36.2.5 (2022/05)
-
 ### OSS 関連
 
 * [setup-service-jenkins][]
@@ -36,6 +34,8 @@
 * 6月クソ暑
 * Netflix 飽きてきた
 * Dagger をもうちょっと使って記事にしたいと思ってるんだけどわからないことが多い
+
+## 0.36.2.5 (2022/05)
 
 ### iutest 関連
 
