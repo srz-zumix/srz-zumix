@@ -5,7 +5,37 @@
 
 ## 0.36.3.6 (2022/06)
 
+### iutest 関連
+
+* ing
+  * 2GB を超えるファイルサイズの取得を修正中 https://github.com/srz-zumix/iutest/pull/663 
+  * C++ Core Guidlines Check に対応中 https://github.com/srz-zumix/iutest/pull/627
+* done
+  * [Dagger][] https://github.com/srz-zumix/iutest/pull/653
+  * alpine linux でのビルドエラー修正 https://github.com/srz-zumix/iutest/pull/653
+
 ## 0.36.2.5 (2022/05)
+
+### OSS 関連
+
+* [setup-service-jenkins][]
+  * v2 released
+    * node の登録対応
+    * サービスコンテナの指定を name のみに簡略化
+* [jenkinsfile-shellcheck][] released
+  
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2022/06/) 
+  * [Jenkinsfile の sh ブロックの shellcheck をする GitHub Action をリリースしました](https://srz-zumix.blogspot.com/2022/06/jenkinsfile-sh-shellcheck-github-action.html)
+  * [Jenkinsfile の checkout gitSCM で LFS Pull のタイムアウト設定](https://srz-zumix.blogspot.com/2022/06/jenkinsfile-checkout-gitscm-lfs-pull.html)
+  * [【DockerHub】typo して間違った repository に push してしまった Docker image を正しい repository にコピーした](https://srz-zumix.blogspot.com/2022/06/dockerhubtypo-repository-push-docker.html) 
+
+### その他
+
+* 6月クソ暑
+* Netflix 飽きてきた
+* Dagger をもうちょっと使って記事にしたいと思ってるんだけどわからないことが多い
 
 ### iutest 関連
 
