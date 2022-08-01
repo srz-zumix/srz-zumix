@@ -5,6 +5,52 @@
 
 ## 0.36.4.7 (2022/07)
 
+### iutest 関連
+
+* ing
+  * 2GB を超えるファイルサイズの取得を修正中 https://github.com/srz-zumix/iutest/pull/663 
+  * C++ Core Guidlines Check に対応中 https://github.com/srz-zumix/iutest/pull/627
+* done
+  * CMake を更新
+    * Visual Studio の場合の対応を更新
+    * /std=c++latest 対応
+    * テスト結果のアウトプットに対応
+  * Earthly 導入 https://github.com/srz-zumix/iutest/pull/667
+  * Dagger の更新 https://github.com/srz-zumix/iutest/pull/666
+  * Bitrise に iOS ビルドを追加（今までのは MacOS ビルドだった）
+  * sider/wercker のリンク削除
+
+### OSS 関連
+
+* [Wandbox Status][] に Zig を追加
+* [wandbox-api][]
+  * wandbox-status コマンドを未知の言語にも対応
+  * Zig を追加
+  * ; で statement 区切られた場合のファイル自動追加処理を修正中
+    * 1行に複数 import とかに対応してなかった 
+  * require version を python >3.5 に変更
+    * 3.5 ない機能を使うためにそうしたけど、結局使わなかった。が、まぁ古いし上げてしまう
+* [amaterasu][]
+  * dependency の問題を修正 
+* [ci-specs][]
+  * メンテナンス
+  * Sider 削除
+  * Wercker 削除
+
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2022/07/) 
+  * [Git 2.37.0 で FSMonitor daemon が追加されたことで status が早くなったそうです](https://srz-zumix.blogspot.com/2022/07)
+  * [Integromat migrate to Make (formerly Integromat)](https://srz-zumix.blogspot.com/2022/07/integromat-migrate-to-make-formerly.html)
+  * [Slack の過去の投稿を再投稿して 90 日制限を回避する](https://srz-zumix.blogspot.com/2022/07/slack-90.html)
+
+### その他
+
+* Dagger 見てたけど Earthly のほうがいいじゃんってなってる
+* Make formeryl Integromat 特に変わらず使えてる、というか変わったところがわからんくてなんで一新したのがわからん
+* 最近お絵かきしてます。人に見せられるレベルになったらなんか考える
+* バイナリ列見てこれは〜だねといえるようになりたかった
+
 ## 0.36.3.6 (2022/06)
 
 ### iutest 関連
@@ -135,6 +181,8 @@
 * 最近ブログの執筆ペースが月２回ほどになってますが、ウマ娘のせいです。
 * 今年も無事 minor バージョンアップしました
 
+[amaterasu]:https://github.com/srz-zumix/amaterasu
+[ci-specs]:https://github.com/srz-zumix/ci-specs
 [Dagger]:https://dagger.io/
 [docker-iwyu]:https://github.com/srz-zumix/docker-iwyu
 [docker-zapcc]:https://github.com/srz-zumix/docker-zapcc
