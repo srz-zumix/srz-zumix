@@ -5,6 +5,34 @@
 
 ## 0.36.5.8 (2022/08)
 
+### iutest 関連
+
+* ing
+  * 2GB を超えるファイルサイズの取得を修正中 https://github.com/srz-zumix/iutest/pull/663 
+  * C++ Core Guidlines Check に対応中 https://github.com/srz-zumix/iutest/pull/627
+
+### OSS 関連
+
+* [gh-act][]
+  * [nektos/act][] の補助ツールを開発しています 
+* [wandbox-api][]
+  * ファイルの自動追加機能を、1行に複数の statement ある場合にも対応
+* いくつか OSS に軽微な PR をしました
+
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2022/08/) 
+  * [GitHub Actions の Composite Action で post 処理を実現する方法](https://srz-zumix.blogspot.com/2022/08/github-actions-composite-action-post.html)
+  * [Git で今のブランチ名を取得するコマンドの違いを確認してみた](https://srz-zumix.blogspot.com/2022/08/git.html)
+  * [nektos/act で GitHub Actions のワークフローをローカル実行](https://srz-zumix.blogspot.com/2022/08/nektosact-github-actions.html)
+
+### その他
+
+* CEDEC に参加しました
+* お絵かきように Galaxy Tab S8 Ulta を買いました
+* リリースノート書いてて気づいたけど最近 Git やら GitHub Actions のことばっかりやってるな
+* 画像生成 AI まだ 1 つもやってません。Waifu Lab を昔使ったことはある。来月は触ってみたい
+
 ## 0.36.4.7 (2022/07)
 
 ### iutest 関連
@@ -188,8 +216,10 @@
 [Dagger]:https://dagger.io/
 [docker-iwyu]:https://github.com/srz-zumix/docker-iwyu
 [docker-zapcc]:https://github.com/srz-zumix/docker-zapcc
+[gh-act]:https://github.com/srz-zumix/gh-act
 [iutest]:https://github.com/srz-zumix/iutest
 [jenkinsfile-shellcheck]:https://github.com/srz-zumix/jenkinsfile-shellcheck
+[nektos/act]:https://github.com/nektos/act
 [setup-service-jenkins]:https://github.com/srz-zumix/setup-service-jenkins
 [Wandbox]:https://wandbox.org/
 [Wandbox Status]:https://srz-zumix.github.io/wandbox-status/
