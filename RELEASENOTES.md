@@ -5,6 +5,38 @@
 
 ## 0.36.6.9 (2022/09)
 
+### iutest 関連
+
+* ing
+  * C++ Core Guidlines Check に対応中 https://github.com/srz-zumix/iutest/pull/627
+* done
+  * 2GB を超えるファイルサイズの取得 https://github.com/srz-zumix/iutest/pull/663 
+
+### OSS 関連
+
+* [gh-act][]
+  * 0.2 をリリースしました
+* [tails-of-words][]
+  * [補助動詞の漢字・ら抜き言葉の検出を実装](https://github.com/srz-zumix/tails-of-words/pull/22) 
+
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2022/09/) 
+  * [CEDEC でやってた補助動詞の漢字・ら抜き言葉の検出を実装してみた](https://srz-zumix.blogspot.com/2022/09/cedec.html)
+  * [Dagger 使ってみた](https://srz-zumix.blogspot.com/2022/09/dagger.html)
+  * [Homebrew と git fsmonitor の相性が悪かったので対策した](https://srz-zumix.blogspot.com/2022/09/homebrew-git-fsmonitor.html) 
+* [Zenn][]
+  * [GitHub Actions のローカル実行ツール（nektos/act）を便利にする gh extension を作った](https://zenn.dev/srz_zumix/articles/gh-act-first-released) 
+
+### その他
+
+* お絵かき
+  * デジタルお絵かき初めて一ヶ月、多少上達したかな
+  * 手軽に消したり、修正できるのでどこが悪かったのか、どうすればよかったのかがやりやすくてアナログで枚数描くより効率的に思えた
+  * お絵かき用の twitter アカウントも作った
+  * なぜかどんどんおっぱいが大きくなっていく
+* 趣味=プログラミングと言ってきたけど、できないことにできるようにするのが好きなのかも
+
 ## 0.36.5.8 (2022/08)
 
 ### iutest 関連
@@ -223,9 +255,11 @@
 [jenkinsfile-shellcheck]:https://github.com/srz-zumix/jenkinsfile-shellcheck
 [nektos/act]:https://github.com/nektos/act
 [setup-service-jenkins]:https://github.com/srz-zumix/setup-service-jenkins
+[tails-of-words]:https://github.com/srz-zumix/tails-of-words
 [Wandbox]:https://wandbox.org/
 [Wandbox Status]:https://srz-zumix.github.io/wandbox-status/
 [wandbox-api]:https://github.com/srz-zumix/wandbox-api
 [wandbox-builder]:https://github.com/melpon/wandbox-builder
 [wandbox-status]:https://github.com/srz-zumix/wandbox-status
 [yurumikuji]:https://github.com/srz-zumix/yurumikuji
+[Zenn]:https://zenn.dev/srz_zumix
