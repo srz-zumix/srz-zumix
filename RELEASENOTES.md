@@ -5,6 +5,27 @@
 
 ## 0.36.7.10 (2022/10)
 
+### iutest 関連
+
+* ing
+  * C++ Core Guidlines Check に対応中 https://github.com/srz-zumix/iutest/pull/627
+* Codefresh でテストデータ作成失敗してたのでスキップ可能に修正
+
+### OSS 関連
+
+* GITHUB_OUTPUT に対応中
+
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2022/10/) 
+  * [【GitHub Actions】コンテキストダンプのススメ](https://srz-zumix.blogspot.com/2022/10/github-actions.html)
+
+### その他
+
+* お絵かき
+  * 絵ばっか書いててほとんどプログラミングしない、記事も書かない月だった
+  * 仕事のコーディングが楽しいので趣味プログラミングが減ってきた
+
 ## 0.36.6.9 (2022/09)
 
 ### iutest 関連
