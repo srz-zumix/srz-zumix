@@ -13,7 +13,7 @@
 
 ### OSS 関連
 
-* GITHUB_OUTPUT に対応中
+* [GITHUB_OUTPUT](https://github.blog/changelog/2022-10-11-github-actions-deprecating-save-state-and-set-output-commands/) に対応中
 
 ### ブログ/執筆
 
