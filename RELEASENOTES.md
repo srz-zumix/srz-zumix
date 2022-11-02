@@ -9,7 +9,8 @@
 
 * ing
   * C++ Core Guidlines Check に対応中 https://github.com/srz-zumix/iutest/pull/627
-* Codefresh でテストデータ作成失敗してたのでスキップ可能に修正
+* done
+  * Codefresh でテストデータ作成失敗してたのでスキップ可能に修正
 
 ### OSS 関連
 
