@@ -5,6 +5,32 @@
 
 ## 0.36.8.11 (2022/11)
 
+### iutest 関連
+
+* ing
+  * C++ Core Guidlines Check に対応中 https://github.com/srz-zumix/iutest/pull/627
+  * Google Test 12.X 互換性対応
+
+### OSS 関連
+
+* git にパッチ送った https://github.com/gitgitgadget/git/pull/1406
+* [GITHUB_OUTPUT](https://github.blog/changelog/2022-10-11-github-actions-deprecating-save-state-and-set-output-commands/) に対応中
+
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2022/11/) 
+  * [git で新規ブランチ作成時の typo を防ぐ](https://srz-zumix.blogspot.com/2022/11/git-typo.html)
+  * [【Make formerly Integromat】Twitter でいいねした画像を自動でクラウドストレージに保存する
+](https://srz-zumix.blogspot.com/2022/11/make-formerly-integromattwitter.html)
+
+### その他
+
+* お絵かき
+  * 絵ばっか書いててほとんどプログラミングしない、記事も書かない月だった
+  * 仕事のコーディングが楽しいので趣味プログラミングが減ってきた
+  * あれ、先月と同じこと言ってる
+
+
 ## 0.36.7.10 (2022/10)
 
 ### iutest 関連
