@@ -3,6 +3,8 @@
 * [0.35](old/RELEASENOTES_35.md)
 * [0.34](old/RELEASENOTES_34.md)
 
+## 0.37.9.12 (2022/12)
+
 ## 0.36.8.11 (2022/11)
 
 ### iutest 関連
