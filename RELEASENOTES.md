@@ -5,6 +5,29 @@
 
 ## 0.36.9.12 (2022/12)
 
+### iutest 関連
+
+* ing
+  * C++ Core Guidlines Check に対応中 https://github.com/srz-zumix/iutest/pull/627
+* done
+  * Google Test 12.X 互換性対応
+
+### OSS 関連
+
+* [GITHUB_OUTPUT](https://github.blog/changelog/2022-10-11-github-actions-deprecating-save-state-and-set-output-commands/) に対応中
+* Docker 関連 repo のメンテナンス
+
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2022/12/) 
+  * [Git に Contribute してみた](https://srz-zumix.blogspot.com/2022/12/git-contribute.html)
+  * [GitHub Actions の Composite Action で post 処理を実現する方法の訂正](https://srz-zumix.blogspot.com/2022/12/github-actions-composite-action-post.html)
+
+### その他
+
+* あけましておめでとうございます
+* 今年は少し外に出るかも
+
 ## 0.36.8.11 (2022/11)
 
 ### iutest 関連
