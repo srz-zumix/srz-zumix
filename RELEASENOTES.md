@@ -3,6 +3,19 @@
 * [0.35](old/RELEASENOTES_35.md)
 * [0.34](old/RELEASENOTES_34.md)
 
+## 0.36.10.1 (2023/01)
+
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2023/01/) 
+  * [Ansible で実行中の bash script を上書きしても大丈夫なのか試してみた](https://srz-zumix.blogspot.com/2023/01/ansible-bash-script.html) 
+
+### その他
+
+* 絵をずっと描いてた
+* スプラトゥーン3 始めた
+* 進捗ダメです
+
 ## 0.36.9.12 (2022/12)
 
 ### iutest 関連
