@@ -1,7 +1,10 @@
 # 自分リリースノート (Myself Release Notes)
 
+* [0.36](old/RELEASENOTES_36.md)
 * [0.35](old/RELEASENOTES_35.md)
 * [0.34](old/RELEASENOTES_34.md)
+
+## 0.37.0.3 (2023/03)
 
 ## 0.36.11.2 (2023/02)
 
