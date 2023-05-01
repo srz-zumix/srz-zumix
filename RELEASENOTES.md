@@ -4,6 +4,8 @@
 * [0.35](old/RELEASENOTES_35.md)
 * [0.34](old/RELEASENOTES_34.md)
 
+## 0.37.2.5 (2023/05)
+
 ## 0.37.1.4 (2023/04)
 
 ### GitHub
