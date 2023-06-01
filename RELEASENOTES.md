@@ -6,6 +6,42 @@
 
 ## 0.37.2.5 (2023/05)
 
+### GitHub
+
+| TITLE | KIND | STATE | UPDATE | LINK |
+|:------|:-----|:------|:-------|:-----|
+| fix compare url hash length| pr| closed| 2023-05-31T15:30:16Z| [srz-zumix/gh-act#89](https://github.com/srz-zumix/gh-act/pull/89) |
+| fix repo topics| pr| merged| 2023-05-31T12:22:03Z| [srz-zumix/gh-act#88](https://github.com/srz-zumix/gh-act/pull/88) |
+| add help subcommand| pr| merged| 2023-05-29T17:10:03Z| [srz-zumix/gh-act#87](https://github.com/srz-zumix/gh-act/pull/87) |
+| test overwrite GITHUB_EVENT_PATH| pr| open| 2023-05-29T12:44:28Z| [srz-zumix/gh-act#84](https://github.com/srz-zumix/gh-act/pull/84) |
+| add --review option| pr| merged| 2023-05-29T12:38:38Z| [srz-zumix/gh-activity-report#20](https://github.com/srz-zumix/gh-activity-report/pull/20) |
+| add --visibility option| pr| merged| 2023-05-23T17:31:37Z| [srz-zumix/gh-activity-report#19](https://github.com/srz-zumix/gh-activity-report/pull/19) |
+| first| pr| open| 2023-05-18T13:14:08Z| [srz-zumix/commit-payload-insert-action#1](https://github.com/srz-zumix/commit-payload-insert-action/pull/1) |
+| fix account filter parse bug| pr| merged| 2023-05-18T12:54:25Z| [srz-zumix/gh-activity-report#18](https://github.com/srz-zumix/gh-activity-report/pull/18) |
+| Fixed getCommitFromGitHubAPIRequest to refer to GITHUB_API_URL| pr| merged| 2023-05-18T12:36:00Z| [benchmark-action/github-action-benchmark#171](https://github.com/benchmark-action/github-action-benchmark/pull/171) |
+| v0.3| pr| merged| 2023-05-16T06:15:57Z| [srz-zumix/gh-activity-report#17](https://github.com/srz-zumix/gh-activity-report/pull/17) |
+| add months-ago| pr| merged| 2023-05-16T06:07:55Z| [srz-zumix/gh-activity-report#16](https://github.com/srz-zumix/gh-activity-report/pull/16) |
+| Create owner_all_repo_matrix.yaml| pr| merged| 2023-05-16T01:34:59Z| [srz-zumix/github-actions-sample#14](https://github.com/srz-zumix/github-actions-sample/pull/14) |
+| Account filters can be specified multiple times| pr| merged| 2023-05-12T03:12:31Z| [srz-zumix/gh-activity-report#9](https://github.com/srz-zumix/gh-activity-report/pull/9) |
+| Resolves @me to GITHU_ACTOR for GitHub Actions| pr| merged| 2023-05-11T14:27:23Z| [srz-zumix/gh-activity-report#15](https://github.com/srz-zumix/gh-activity-report/pull/15) |
+| check option parameter and set default| pr| merged| 2023-05-11T00:49:39Z| [srz-zumix/gh-activity-report#14](https://github.com/srz-zumix/gh-activity-report/pull/14) |
+| getServerUrl refers to the GITHUB_SERVER_URL environment variable| pr| merged| 2023-05-08T02:54:33Z| [benchmark-action/github-action-benchmark#169](https://github.com/benchmark-action/github-action-benchmark/pull/169) |
+| add list format| pr| merged| 2023-05-02T13:34:48Z| [srz-zumix/gh-activity-report#12](https://github.com/srz-zumix/gh-activity-report/pull/12) |
+| update release_drafter settings| pr| merged| 2023-05-02T13:34:34Z| [srz-zumix/gh-activity-report#13](https://github.com/srz-zumix/gh-activity-report/pull/13) |
+| version 0.37.2.5 (2023/05)| pr| open| 2023-05-01T14:12:17Z| [srz-zumix/srz-zumix#35](https://github.com/srz-zumix/srz-zumix/pull/35) |
+| version 0.37.1.4 (2023/04)| pr| merged| 2023-05-01T14:09:43Z| [srz-zumix/srz-zumix#34](https://github.com/srz-zumix/srz-zumix/pull/34) |
+| add --prs option| pr| merged| 2023-05-01T14:03:19Z| [srz-zumix/gh-activity-report#11](https://github.com/srz-zumix/gh-activity-report/pull/11) |
+| rm kind row if subcommand prs| pr| merged| 2023-05-01T13:57:36Z| [srz-zumix/gh-activity-report#10](https://github.com/srz-zumix/gh-activity-report/pull/10) |
+
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2023/05/) 
+  * [【GitHub Actions】Organization/Owner 配下にあるすべてのリポジトリをマトリックスにする]([https://srz-zumix.blogspot.com/2023/04/github-actionsreusable-workflow.html](https://srz-zumix.blogspot.com/2023/05/github-actionsorganizationowner.html))
+
+### その他
+
+* スプラトゥーン -2113pt で終了。-4000pt までいったのを頑張ったと思う・・・
+
 ## 0.37.1.4 (2023/04)
 
 ### GitHub
