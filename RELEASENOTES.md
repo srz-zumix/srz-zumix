@@ -4,6 +4,40 @@
 * [0.35](old/RELEASENOTES_35.md)
 * [0.34](old/RELEASENOTES_34.md)
 
+## 0.37.3.6 (2023/06)
+
+### GitHub
+
+| TITLE | KIND | STATE | UPDATE | LINK |
+|:------|:-----|:------|:-------|:-----|
+| add tee option| pr| merged| 2023-06-30T13:53:54Z| [srz-zumix/kamidana-action#4](https://github.com/srz-zumix/kamidana-action/pull/4) |
+| fix act job condition| pr| merged| 2023-06-29T11:57:34Z| [srz-zumix/gh-act#93](https://github.com/srz-zumix/gh-act/pull/93) |
+| cache-dependency-path| pr| merged| 2023-06-29T09:48:50Z| [srz-zumix/kamidana-action#3](https://github.com/srz-zumix/kamidana-action/pull/3) |
+| fix workflow name| pr| merged| 2023-06-29T02:32:28Z| [srz-zumix/kamidana-action#2](https://github.com/srz-zumix/kamidana-action/pull/2) |
+| first| pr| merged| 2023-06-29T02:28:16Z| [srz-zumix/kamidana-action#1](https://github.com/srz-zumix/kamidana-action/pull/1) |
+| fix workflow / makefile| pr| merged| 2023-06-28T05:25:40Z| [srz-zumix/gh-activity-report#21](https://github.com/srz-zumix/gh-activity-report/pull/21) |
+| fix typo| pr| merged| 2023-06-28T01:49:17Z| [srz-zumix/yurumikuji#3](https://github.com/srz-zumix/yurumikuji/pull/3) |
+| fix: Allow aliases to recognize extended commands| pr| merged| 2023-06-22T06:49:43Z| [cli/cli#7523](https://github.com/cli/cli/pull/7523) |
+| [Cirrus CI] update osx image| pr| merged| 2023-06-17T05:01:10Z| [srz-zumix/iutest#697](https://github.com/srz-zumix/iutest/pull/697) |
+| Update README.md| pr| merged| 2023-06-17T02:37:02Z| [srz-zumix/github-actions-sample#15](https://github.com/srz-zumix/github-actions-sample/pull/15) |
+| vsprintf to	vsnprintf| pr| merged| 2023-06-13T14:51:36Z| [srz-zumix/iutest#698](https://github.com/srz-zumix/iutest/pull/698) |
+| v0.5| pr| merged| 2023-06-13T12:51:48Z| [srz-zumix/gh-act#92](https://github.com/srz-zumix/gh-act/pull/92) |
+| Extension command cannot be executed if aliased| issue| closed| 2023-06-12T23:43:36Z| [cli/cli#7522](https://github.com/cli/cli/issues/7522) |
+| fix apple clang detect| pr| merged| 2023-06-12T02:40:30Z| [srz-zumix/iutest#704](https://github.com/srz-zumix/iutest/pull/704) |
+| Fix apple clang detect| pr| closed| 2023-06-09T00:51:14Z| [srz-zumix/iutest#703](https://github.com/srz-zumix/iutest/pull/703) |
+| update repo json| pr| merged| 2023-06-02T14:07:08Z| [srz-zumix/gh-act#91](https://github.com/srz-zumix/gh-act/pull/91) |
+| update push event| pr| merged| 2023-06-01T15:52:22Z| [srz-zumix/gh-act#90](https://github.com/srz-zumix/gh-act/pull/90) |
+
+### ブログ/執筆
+
+* [ブログズミ](https://srz-zumix.blogspot.com/2023/06/)
+  * [gh と peco でリポジトリ一覧から選択して clone する](https://srz-zumix.blogspot.com/2023/06/gh-peco-clone.html) 
+
+### その他
+
+* スプラトゥーン、お絵描き、スプラトゥーン、お絵描き
+
+
 ## 0.37.2.5 (2023/05)
 
 ### GitHub
