@@ -6,6 +6,21 @@
 
 ## 0.37.4.7 (2023/07)
 
+### GitHub
+
+| TITLE | KIND | STATE | UPDATE | LINK |
+|:------|:-----|:------|:-------|:-----|
+| merge_group event| issue| open| 2023-07-05T05:01:10Z| [srz-zumix/gh-act#95](https://github.com/srz-zumix/gh-act/issues/95) |
+| minor fix and boolean expressoin test| pr| merged| 2023-07-01T12:09:33Z| [srz-zumix/gh-act#94](https://github.com/srz-zumix/gh-act/pull/94) |
+
+### その他
+
+* 本業忙しいのと SNS 離れからか個人活動がかなりおろそかになってる
+* スプラトゥーン3
+  * S+3 になった（前期 S+0 -4,000pt から成長してる？）
+* お絵かき
+  * アップ日目標にあわせて絵を描けるようになってきたかも？
+
 ## 0.37.3.6 (2023/06)
 
 ### GitHub
