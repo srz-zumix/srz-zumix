@@ -4,6 +4,27 @@
 * [0.35](old/RELEASENOTES_35.md)
 * [0.34](old/RELEASENOTES_34.md)
 
+## 0.37.5.8 (2023/08)
+
+### GitHub
+
+| TITLE | KIND | STATE | UPDATE | LINK |
+|:------|:-----|:------|:-------|:-----|
+| multi data file| pr| merged| 2023-08-31T20:35:04Z| [srz-zumix/kamidana-action#6](https://github.com/srz-zumix/kamidana-action/pull/6) |
+| What is the license for this repository| issue| closed| 2023-08-28T03:25:23Z| [podhmo/kamidana#47](https://github.com/podhmo/kamidana/issues/47) |
+| regex_replace filter| pr| merged| 2023-08-28T03:24:35Z| [srz-zumix/kamidana-action#5](https://github.com/srz-zumix/kamidana-action/pull/5) |
+| fix no option parse| pr| merged| 2023-08-26T00:46:27Z| [srz-zumix/gh-activity-report#26](https://github.com/srz-zumix/gh-activity-report/pull/26) |
+| issue-metrics| pr| merged| 2023-08-22T02:23:18Z| [srz-zumix/gh-activity-report#23](https://github.com/srz-zumix/gh-activity-report/pull/23) |
+| v1| pr| merged| 2023-08-18T04:32:35Z| [srz-zumix/gh-activity-report#25](https://github.com/srz-zumix/gh-activity-report/pull/25) |
+| no options and tests| pr| merged| 2023-08-17T02:17:07Z| [srz-zumix/gh-activity-report#22](https://github.com/srz-zumix/gh-activity-report/pull/22) |
+| Update RELEASENOTES.md| pr| open| 2023-08-02T11:38:44Z| [srz-zumix/srz-zumix#38](https://github.com/srz-zumix/srz-zumix/pull/38) |
+| version 0.37.4.7 (2023/07)| pr| merged| 2023-08-02T11:36:49Z| [srz-zumix/srz-zumix#37](https://github.com/srz-zumix/srz-zumix/pull/37) |
+
+### その他
+
+* 忙しいねぇ
+* スプラトゥーン3 S+17 でフィニッシュ
+
 ## 0.37.4.7 (2023/07)
 
 ### GitHub
