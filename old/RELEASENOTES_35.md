@@ -92,10 +92,10 @@ classDiagram
 
 ### ブログ/執筆
 
-* [ブログズミ](https://srz-zumix.blogspot.com/2022/01/) 
-　　　* [bash スクリプトの実行中上書き動作が ansible copy module で再現するのか試してみた](https://srz-zumix.blogspot.com/2022/01/bash-ansible-copy-module.html)
-　　　* [GitHub Actions の action 開発者にお願いしたいメジャーバージョンアップするタイミング](https://srz-zumix.blogspot.com/2022/01/github-actions-action.html)
-　　　* [wandbox-api version 0.9.38 をリリースしました](https://srz-zumix.blogspot.com/2022/01/wandbox-api-version-0938.html)
+* [ブログズミ](https://srz-zumix.blogspot.com/2022/01/)
+  * [bash スクリプトの実行中上書き動作が ansible copy module で再現するのか試してみた](https://srz-zumix.blogspot.com/2022/01/bash-ansible-copy-module.html)
+  * [GitHub Actions の action 開発者にお願いしたいメジャーバージョンアップするタイミング](https://srz-zumix.blogspot.com/2022/01/github-actions-action.html)
+  * [wandbox-api version 0.9.38 をリリースしました](https://srz-zumix.blogspot.com/2022/01/wandbox-api-version-0938.html)
 
 ### その他
 
