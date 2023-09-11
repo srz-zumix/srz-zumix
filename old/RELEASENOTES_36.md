@@ -1,5 +1,7 @@
 # 自分リリースノート (Myself Release Notes)
 
+[0.35](old/RELEASENOTES_35.md)
+
 ## 0.36.11.2 (2023/02)
 
 * [gh-act][]
