@@ -4,6 +4,27 @@
 * [0.35](old/RELEASENOTES_35.md)
 * [0.34](old/RELEASENOTES_34.md)
 
+## 0.37.8.11 (2023/11)
+
+### GitHub
+
+| TITLE | KIND | STATE | UPDATE | LINK |
+|:------|:-----|:------|:-------|:-----|
+| v0.6| pr| merged| 2023-11-30T16:10:01Z| [srz-zumix/gh-act#100](https://github.com/srz-zumix/gh-act/pull/100) |
+| container-architecture on apple silicon| pr| merged| 2023-11-30T16:03:38Z| [srz-zumix/gh-act#99](https://github.com/srz-zumix/gh-act/pull/99) |
+| support GH_HOST| pr| merged| 2023-11-30T10:50:42Z| [srz-zumix/gh-act#98](https://github.com/srz-zumix/gh-act/pull/98) |
+| Reduce api call| pr| merged| 2023-11-29T05:27:00Z| [srz-zumix/gh-act#96](https://github.com/srz-zumix/gh-act/pull/96) |
+| support -h\|--help option| pr| merged| 2023-11-29T05:26:45Z| [srz-zumix/gh-act#97](https://github.com/srz-zumix/gh-act/pull/97) |
+| ubuntu-latest| pr| open| 2023-11-27T10:52:48Z| [srz-zumix/ci-specs#35](https://github.com/srz-zumix/ci-specs/pull/35) |
+| Update paths-ignore-self.yml| pr| merged| 2023-11-21T04:35:44Z| [srz-zumix/github-actions-sample#20](https://github.com/srz-zumix/github-actions-sample/pull/20) |
+| mkdir -p| pr| merged| 2023-11-01T03:04:59Z| [srz-zumix/kamidana-action#13](https://github.com/srz-zumix/kamidana-action/pull/13) |
+
+### その他
+
+* ただいま
+
+## 0.37.7.10 (2023/10)
+
 ## 0.37.6.9 (2023/09)
 
 ## 0.37.5.8 (2023/08)
