@@ -1,0 +1,5 @@
+# CHANGELOG
+
+{%- for age in ("./CHANGELOG" | listdir_dirs) %}
+* [{{ age }}](./CHANGELOG/{{ age }}/CHANGELOG.md)
+{% endfor %}

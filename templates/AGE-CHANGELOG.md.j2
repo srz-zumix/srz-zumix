@@ -1,0 +1,8 @@
+# {{ "./" | abspath | basename }}
+{% for version in ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11"] %}
+{%- with path=version ~ "/CHANGELOG.md" %}
+{%- if path | path_exists %}
+{{ path | read_from_file }}
+{%- endif %}
+{%- endwith %}
+{%- endfor %}

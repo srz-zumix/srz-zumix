@@ -1,0 +1,136 @@
+on:
+  workflow_call:
+    inputs:
+      birth_year:
+        description: '誕生年 (YYYY)'
+        required: true
+        type: number
+      birth_month:
+        description: '誕生月 (1-12)'
+        required: true
+        type: number
+
+permissions: {}
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.inputs.repository }}
+          ref: main
+          persist-credentials: false
+      - name: Get params
+        id: params
+        env:
+          INPUTS_BIRTH_YEAR: ${{ inputs.birth_year }}
+          INPUTS_BIRTH_MONTH: ${{ inputs.birth_month }}
+        run: |
+          MONTH=$(date +'%m')
+          CURRENT_YEAR=$(date +'%Y')
+          CURRENT_MONTH=$(date +'%-m')
+          BIRTH_YEAR=${INPUTS_BIRTH_YEAR}
+          BIRTH_MONTH=${INPUTS_BIRTH_MONTH}
+
+          # 年齢計算
+          AGE=$((CURRENT_YEAR - BIRTH_YEAR))
+          if [ "${CURRENT_MONTH}" -lt "${BIRTH_MONTH}" ]; then
+            AGE=$((AGE - 1))
+          fi
+
+          # バージョン計算 (誕生月からの差分)
+          VERSION=$(( (CURRENT_MONTH - BIRTH_MONTH + 12) % 12 ))
+
+          AGE_PATH="CHANGELOG/${AGE}"
+          CHANGLOG_PATH="CHANGELOG/${AGE}/${VERSION}/CHANGELOG.md"
+          GITHUB_ACTIVITY_PATH="CHANGELOG/${AGE}/${VERSION}/github-activity.md"
+
+          # 対象月の開始日と終了日を計算
+          FIRST_DAY="${CURRENT_YEAR}-${MONTH}-01"
+          LAST_DAY=$(date -d "${CURRENT_YEAR}-${MONTH}-01 +1 month -1 day" +'%Y-%m-%d')
+
+          {
+            echo "month=${MONTH}"
+            echo "age=${AGE}"
+            echo "version=${VERSION}"
+            echo "age_path=${AGE_PATH}"
+            echo "path=${CHANGLOG_PATH}"
+            echo "github_activity_path=${GITHUB_ACTIVITY_PATH}"
+            echo "first_day=${FIRST_DAY}"
+            echo "last_day=${LAST_DAY}"
+            echo "branch=feature/${AGE}-${VERSION}"
+            if [ -f "${CHANGLOG_PATH}" ]; then
+              echo "exists=true"
+            else
+              echo "exists=false"
+            fi
+          } >> "${GITHUB_OUTPUT}"
+      - name: Install gh-activity-report
+        run: |
+          gh extension install srz-zumix/gh-activity-report || true
+        if: steps.params.outputs.exists == 'false'
+      - name: Generate GitHub Activity Report
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FIRST_DAY: ${{ steps.params.outputs.first_day }}
+          LAST_DAY: ${{ steps.params.outputs.last_day }}
+          GITHUB_ACTIVITY_PATH: ${{ steps.params.outputs.github_activity_path }}
+        run: |
+          mkdir -p "$(dirname "${GITHUB_ACTIVITY_PATH}")"
+          gh activity-report \
+            --since "${FIRST_DAY}" \
+            --until "${LAST_DAY}" \
+            --author "${GITHUB_REPOSITORY_OWNER}" \
+            -f markdown \
+            --visibility public \
+            > "${GITHUB_ACTIVITY_PATH}"
+        if: steps.params.outputs.exists == 'false'
+      - name: Create params
+        id: create-params
+        env:
+          PARAMS: ${{ toJson(steps.params.outputs) }}
+        run: |
+          cat <<EOF > "${{ runner.temp }}/params.json"
+            ${PARAMS}
+          EOF
+        if: steps.params.outputs.exists == 'false'
+      - name: Create CHANGELOG
+        uses: srz-zumix/kamidana-action@a6bb4009c385c154ac0ec04b988cf3f7c785c438 # v3.0.0
+        with:
+          template: "templates/CHANGELOG.md.j2"
+          output_file: "${{ steps.params.outputs.path }}"
+          data_files: |
+            ${{ runner.temp }}/params.json
+          input_format: "json"
+        if: steps.params.outputs.exists == 'false'
+      - name: Copy AGE-CHANGELOG
+        env:
+          AGE_PATH: ${{ steps.params.outputs.age_path }}
+        run: |
+          mkdir -p "${AGE_PATH}"
+          cp templates/AGE-CHANGELOG.md.j2 "${AGE_PATH}/CHANGELOG.md.j2"
+        if: steps.params.outputs.exists == 'false'
+      - uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7.0.11
+        id: create_pr
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "age${{ steps.params.outputs.age }}-${{ steps.params.outputs.month }}"
+          title: "age${{ steps.params.outputs.age }}-${{ steps.params.outputs.month }}"
+          body: |
+            ${{ steps.params.outputs.month }} 月の差分を [CHANGELOG.md](${{ github.server_url }}/${{ github.repository }}/tree/${{ steps.params.outputs.branch }}/${{ steps.params.outputs.path }}) に記載してください
+
+            created by [${{ github.workflow }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+          branch: ${{ steps.params.outputs.branch }}
+          add-paths: ${{ steps.params.outputs.age_path }}
+        if: steps.params.outputs.exists == 'false'
+      - name: Assignee
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ steps.create_pr.outputs.pull-request-number }}
+        run: |
+          gh pr edit "${PR_NUMBER}" --add-assignees "${GITHUB_REPOSITORY_OWNER}" 2>/dev/null || true
+        if: steps.create_pr.outputs.pull-request-number != ''
