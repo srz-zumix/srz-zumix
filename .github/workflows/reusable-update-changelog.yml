@@ -23,6 +23,9 @@ jobs:
           persist-credentials: false
       - name: Get Params
         id: params
+        env:
+          INPUTS_BIRTH_YEAR: ${{ inputs.birth_year }}
+          INPUTS_BIRTH_MONTH: ${{ inputs.birth_month }}
         run: |
           CURRENT_YEAR=$(date +'%Y')
           CURRENT_MONTH=$(date +'%-m')
@@ -32,8 +35,8 @@ jobs:
             LAST_MONTH=12
             LAST_MONTH_YEAR=$((CURRENT_YEAR - 1))
           fi
-          BIRTH_YEAR=${{ inputs.birth_year }}
-          BIRTH_MONTH=${{ inputs.birth_month }}
+          BIRTH_YEAR=${INPUTS_BIRTH_YEAR}
+          BIRTH_MONTH=${INPUTS_BIRTH_MONTH}
 
           # 現在の年齢計算
           AGE_1=$((CURRENT_YEAR - BIRTH_YEAR))
