@@ -7,7 +7,7 @@ on:
 permissions: {}
 
 jobs:
-  update-changlog:
+  update-changelog:
     uses: ./.github/workflows/reusable-update-changelog.yml
     permissions:
       contents: write
