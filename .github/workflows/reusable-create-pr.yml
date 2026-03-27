@@ -43,10 +43,11 @@ jobs:
 
           # バージョン計算 (誕生月からの差分)
           VERSION=$(( (CURRENT_MONTH - BIRTH_MONTH + 12) % 12 ))
+          VERSION_DIR=$(printf '%02d' "${VERSION}")
 
           AGE_PATH="CHANGELOG/${AGE}"
-          CHANGLOG_PATH="CHANGELOG/${AGE}/${VERSION}/CHANGELOG.md"
-          GITHUB_ACTIVITY_PATH="CHANGELOG/${AGE}/${VERSION}/github-activity.md"
+          CHANGLOG_PATH="CHANGELOG/${AGE}/${VERSION_DIR}/CHANGELOG.md"
+          GITHUB_ACTIVITY_PATH="CHANGELOG/${AGE}/${VERSION_DIR}/github-activity.md"
 
           # 対象月の開始日と終了日を計算
           FIRST_DAY="${CURRENT_YEAR}-${MONTH}-01"
