@@ -1,0 +1,10 @@
+rules:
+  unpinned-uses:
+    config:
+      policies:
+        actions/*: any
+  secrets-outside-env:
+    config:
+      allow:
+        - MY_ACTIONS_APP_ID
+        - MY_ACTIONS_APP_PRIVATE_KEY

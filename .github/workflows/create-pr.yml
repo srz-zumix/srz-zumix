@@ -1,0 +1,16 @@
+name: Create PR
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 28 * *'
+      timezone: Asia/Tokyo
+
+jobs:
+  create-pr:
+    uses: ./.github/workflows/reusable-create-pr.yml
+    permissions:
+      contents: write
+      pull-requests: write
+    with:
+      birth_year: ${{ vars.MY_BIRTH_YEAR }}
+      birth_month: ${{ vars.MY_BIRTH_MONTH }}

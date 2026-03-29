@@ -1,0 +1,98 @@
+on:
+  workflow_call:
+    inputs:
+      birth_year:
+        description: '誕生年 (YYYY)'
+        required: true
+        type: number
+      birth_month:
+        description: '誕生月 (1-12)'
+        required: true
+        type: number
+
+permissions: {}
+
+jobs:
+  draft-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Get Draft Release
+        id: draft-release
+        run: |
+          DRAFT_RELEASE=$(gh release list --repo "${GITHUB_REPOSITORY}" --json isDraft,name | jq -r '.[] | select(.isDraft == true) | .name' | head -n 1)
+          echo "name=${DRAFT_RELEASE}" >> "${GITHUB_OUTPUT}"
+        continue-on-error: true
+      - name: Get latest release
+        id: latest-release
+        continue-on-error: true
+        run: |
+          TAG_NAME=$(gh release view --repo "${GITHUB_REPOSITORY}" latest | jq -r '.tag_name')
+          echo "name=${TAG_NAME}" >> "${GITHUB_OUTPUT}"
+      - name: Get next release
+        id: next-release
+        env:
+          LATEST_RELEASE: ${{ steps.latest-release.outputs.tag_name }}
+          DRAFT_RELEASE: ${{ steps.draft-release.outputs.name }}
+          INPUTS_BIRTH_YEAR: ${{ inputs.birth_year }}
+          INPUTS_BIRTH_MONTH: ${{ inputs.birth_month }}
+        run: |
+          MONTH=$(date +'%m')
+          CURRENT_YEAR=$(date +'%Y')
+          CURRENT_MONTH=$(date +'%-m')
+          BIRTH_YEAR=${INPUTS_BIRTH_YEAR}
+          BIRTH_MONTH=${INPUTS_BIRTH_MONTH}
+
+          # 年齢計算
+          AGE=$((CURRENT_YEAR - BIRTH_YEAR))
+          if [ "${CURRENT_MONTH}" -lt "${BIRTH_MONTH}" ]; then
+            AGE=$((AGE - 1))
+          fi
+
+          # バージョン計算 (誕生月からの差分)
+          VERSION=$(( (CURRENT_MONTH - BIRTH_MONTH + 12) % 12 ))
+          VERSION_DIR=$(printf '%02d' "${VERSION}")
+
+          {
+            echo "age=${AGE}"
+            echo "version=${VERSION}"
+            echo "month=${MONTH}"
+            echo "name=0.${AGE}.${VERSION}.${MONTH}"
+            echo "path=CHANGELOG/${AGE}/${VERSION_DIR}/CHANGELOG.md"
+          } >> "${GITHUB_OUTPUT}"
+      - name: Check CHANGELOG
+        id: check-changelog
+        env:
+          RELEASE_PATH: ${{ steps.next-release.outputs.path }}
+        run: |
+          if [ -f "${RELEASE_PATH}" ]; then
+            echo "exists=true" >> "${GITHUB_OUTPUT}"
+          else
+            echo "exists=false" >> "${GITHUB_OUTPUT}"
+          fi
+      - name: Create Draft Release
+        env:
+          RELEASE_NAME: ${{ steps.next-release.outputs.name }}
+          RELEASE_PATH: ${{ steps.next-release.outputs.path }}
+          RELEASE_TITLE: ${{ steps.next-release.outputs.name }}
+        run: |
+          gh release create "${RELEASE_NAME}" --repo "${GITHUB_REPOSITORY}" \
+            --draft -F "${RELEASE_PATH}" --title "${RELEASE_TITLE}"
+        if: steps.check-changelog.outputs.exists == 'true' && steps.draft-release.outputs.name == ''
+      - name: Edit Draft Release
+        env:
+          RELEASE_NAME: ${{ steps.next-release.outputs.name }}
+          RELEASE_PATH: ${{ steps.next-release.outputs.path }}
+          RELEASE_TITLE: ${{ steps.next-release.outputs.name }}
+        run: |
+          gh release edit "${RELEASE_NAME}" --repo "${GITHUB_REPOSITORY}" \
+            --draft -F "${RELEASE_PATH}" --title "${RELEASE_TITLE}"
+        if: steps.check-changelog.outputs.exists == 'true' && steps.draft-release.outputs.name != ''
+

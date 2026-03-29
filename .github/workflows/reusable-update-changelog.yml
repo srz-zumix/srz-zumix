@@ -1,0 +1,91 @@
+on:
+  workflow_call:
+    inputs:
+      birth_year:
+        description: '誕生年 (YYYY)'
+        required: true
+        type: number
+      birth_month:
+        description: '誕生月 (1-12)'
+        required: true
+        type: number
+
+permissions: {}
+
+jobs:
+  update-changelog:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Get Params
+        id: params
+        env:
+          INPUTS_BIRTH_YEAR: ${{ inputs.birth_year }}
+          INPUTS_BIRTH_MONTH: ${{ inputs.birth_month }}
+        run: |
+          CURRENT_YEAR=$(date +'%Y')
+          CURRENT_MONTH=$(date +'%-m')
+          LAST_MONTH=$((CURRENT_MONTH - 1))
+          LAST_MONTH_YEAR=${CURRENT_YEAR}
+          if [ "${LAST_MONTH}" -eq 0 ]; then
+            LAST_MONTH=12
+            LAST_MONTH_YEAR=$((CURRENT_YEAR - 1))
+          fi
+          BIRTH_YEAR=${INPUTS_BIRTH_YEAR}
+          BIRTH_MONTH=${INPUTS_BIRTH_MONTH}
+
+          # 現在の年齢計算
+          AGE_1=$((CURRENT_YEAR - BIRTH_YEAR))
+          if [ "${CURRENT_MONTH}" -lt "${BIRTH_MONTH}" ]; then
+            AGE_1=$((AGE_1 - 1))
+          fi
+
+          # 先月の年齢計算
+          AGE_2=$((LAST_MONTH_YEAR - BIRTH_YEAR))
+          if [ "${LAST_MONTH}" -lt "${BIRTH_MONTH}" ]; then
+            AGE_2=$((AGE_2 - 1))
+          fi
+
+          if [ -f "CHANGELOG/${AGE_1}/CHANGELOG.md.j2" ]; then
+            echo "curr_month_age_path=CHANGELOG/${AGE_1}" >> "${GITHUB_OUTPUT}"
+          fi
+          if [ -f "CHANGELOG/${AGE_2}/CHANGELOG.md.j2" ]; then
+            echo "last_month_age_path=CHANGELOG/${AGE_2}" >> "${GITHUB_OUTPUT}"
+          fi
+      - name: Update CHANGELOG Current Month
+        uses: srz-zumix/kamidana-action@a6bb4009c385c154ac0ec04b988cf3f7c785c438 # v3.0.0
+        with:
+          template: "CHANGELOG.md.j2"
+          output_file: "CHANGELOG.md"
+          working-directory: "${{ steps.params.outputs.curr_month_age_path }}"
+        if: steps.params.outputs.curr_month_age_path != ''
+      - name: Update CHANGELOG Last Month
+        uses: srz-zumix/kamidana-action@a6bb4009c385c154ac0ec04b988cf3f7c785c438 # v3.0.0
+        with:
+          template: "CHANGELOG.md.j2"
+          output_file: "CHANGELOG.md"
+          working-directory: "${{ steps.params.outputs.last_month_age_path }}"
+        if: steps.params.outputs.last_month_age_path != ''
+      - name: Update CHANGELOG Top
+        uses: srz-zumix/kamidana-action@a6bb4009c385c154ac0ec04b988cf3f7c785c438 # v3.0.0
+        with:
+          template: "templates/TOP-CHANGELOG.md.j2"
+          output_file: "CHANGELOG.md"
+
+      - uses: actions/create-github-app-token@v3
+        id: app-token
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        with:
+          app-id: ${{ secrets.MY_ACTIONS_APP_ID }}
+          private-key: ${{ secrets.MY_ACTIONS_APP_PRIVATE_KEY }}
+
+      - name: Commit changelogs
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: suzuki-shunsuke/commit-action@f12e2d628a4ab72dcefe7890ae07e8dbf1e201b9 # v0.1.1
+        with:
+          commit_message: "[ci skip] update changelog"
+          github_token: ${{ steps.app-token.outputs.token }}
